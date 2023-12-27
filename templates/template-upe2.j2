@@ -1,0 +1,2831 @@
+interface NULL0
+#
+acl number 2011
+description SNMP_Write
+ rule 5 permit source 10.35.93.66 0
+ rule 10 permit source 10.35.93.67 0
+ rule 15 permit source 172.18.58.140 0
+ rule 20 permit source 172.18.58.141 0
+#
+acl number 2021
+ description SNMP
+ rule 5 permit vpn-instance-any source 10.35.93.64 0.0.0.7
+ rule 5 description FICO_SERVERS_ZEBRA_PYTHON
+ rule 10 permit vpn-instance-any source 10.35.160.129 0
+ rule 10 description BACKBONE_MEZURA
+ rule 11 permit vpn-instance-any source 10.35.160.130 0
+ rule 11 description REALTIME_MEZURA
+ rule 12 permit vpn-instance-any source 10.214.123.64 0.0.0.63
+ rule 12 description MEZURA_YENI
+ rule 13 permit vpn-instance-any source 10.35.91.124 0
+ rule 13 description CORE_MEZURA
+ rule 20 permit vpn-instance-any source 10.35.160.133 0
+ rule 20 description LOOKOUTEYES
+ rule 21 permit vpn-instance-any source 10.35.160.136 0
+ rule 21 description BB_LOOKOUTEYES
+ rule 22 permit vpn-instance-any source 10.56.35.45 0
+ rule 22 description PORT_TRANSMISYON_FATURALAMA
+ rule 23 permit vpn-instance-any source 10.214.114.45 0
+ rule 23 description PORT_TRANSMISYON_FATURALAMA
+ rule 30 permit vpn-instance-any source 10.35.173.81 0
+ rule 30 description MATE
+ rule 31 permit vpn-instance-any source 10.35.173.82 0
+ rule 31 description MATE3
+ rule 32 permit vpn-instance-any source 10.35.173.83 0
+ rule 32 description MATE3
+ rule 40 permit vpn-instance-any source 82.222.22.228 0
+ rule 40 description ARBOR_DDL-DC1-LAN-PF-01
+ rule 41 permit vpn-instance-any source 10.219.138.8 0
+ rule 41 description ARBOR_GBZ-SOL1-LAN-PF-01
+ rule 42 permit vpn-instance-any source 10.219.138.9 0
+ rule 42 description ARBOR_GBZ-SOL1-LAN-PF-02
+ rule 43 permit vpn-instance-any source 82.222.22.51 0
+ rule 43 description ARBOR_KTL-DC2-LAN-PF-01
+ rule 44 permit vpn-instance-any source 82.222.248.106 0
+ rule 44 description ARBOR_SGT-POP-LAN-PF-01
+ rule 45 permit vpn-instance-any source 82.222.22.252 0
+ rule 45 description ARBOR_YBS-DC1-LAN-PF-01
+ rule 60 permit vpn-instance-any source 213.74.189.192 0.0.0.63
+ rule 60 description SPECTRUM_MEZURA
+ rule 65 permit vpn-instance-any source 10.222.244.0 0.0.3.255
+ rule 65 description MANAGEMENT_IP_BLOCKS
+ rule 70 permit vpn-instance-any source 10.35.91.208 0
+ rule 70 description ADRNIM
+ rule 71 permit vpn-instance-any source 10.35.91.211 0
+ rule 71 description ADRNIM
+ rule 72 permit vpn-instance-any source 10.35.91.212 0
+ rule 72 description ADRNIM
+ rule 73 permit vpn-instance-any source 10.35.91.213 0
+ rule 73 description ADRNIM
+ rule 74 permit vpn-instance-any source 10.35.91.201 0
+ rule 74 description ADRNIM
+ rule 75 permit vpn-instance-any source 10.35.91.200 0
+ rule 75 description ADRNIM
+ rule 76 permit vpn-instance-any source 10.35.91.203 0
+ rule 76 description ADRNIM
+ rule 77 permit vpn-instance-any source 10.35.91.202 0
+ rule 77 description ADRNIM
+ rule 78 permit vpn-instance-any source 10.35.91.204 0
+ rule 78 description ADRNIM
+ rule 79 permit vpn-instance-any source 10.35.91.205 0
+ rule 79 description ADRNIM
+ rule 80 permit vpn-instance-any source 10.35.91.206 0
+ rule 80 description ADRNIM
+ rule 81 permit vpn-instance-any source 10.35.91.128 0.0.0.15
+ rule 81 description ADRNIM
+ rule 82 permit vpn-instance-any source 10.40.74.51 0
+ rule 82 description ADRNIM
+ rule 83 permit vpn-instance-any source 10.40.74.52 0
+ rule 83 description ADRNIM
+ rule 84 permit vpn-instance-any source 10.40.74.53 0
+ rule 84 description ADRNIM
+ rule 85 permit vpn-instance-any source 10.56.36.11 0
+ rule 85 description ADRNIM
+ rule 86 permit vpn-instance-any source 10.56.36.12 0
+ rule 86 description ADRNIM
+ rule 100 permit vpn-instance-any source 213.74.189.65 0
+ rule 100 description CSPC
+ rule 110 permit vpn-instance-any source 10.210.76.163 0
+ rule 110 description Akilli_OMC_Power
+ rule 111 permit vpn-instance-any source 10.210.161.11 0
+ rule 111 description Akilli_OMC_Power
+ rule 112 permit vpn-instance-any source 10.210.161.12 0
+ rule 112 description Akilli_OMC_Power
+ rule 113 permit vpn-instance-any source 10.210.161.239 0
+ rule 113 description Akilli_OMC_Power
+ rule 114 permit vpn-instance-any source 10.201.232.62 0
+ rule 114 description Akilli_OMC_Power
+ rule 115 permit vpn-instance-any source 10.252.3.189 0
+ rule 115 description Akilli_OMC_Power
+ rule 116 permit vpn-instance-any source 10.252.8.115 0
+ rule 116 description Akilli_OMC_Power
+ rule 117 permit vpn-instance-any source 10.40.74.172 0
+ rule 117 description Akilli_OMC_Power
+ rule 118 permit vpn-instance-any source 10.40.74.173 0
+ rule 118 description Akilli_OMC_Power
+ rule 120 permit vpn-instance-any source 172.18.58.140 0
+ rule 120 description TEAM_FICO_SERVER
+ rule 121 permit vpn-instance-any source 172.18.58.141 0
+ rule 121 description TEAM_FICO_SERVER
+ rule 122 permit vpn-instance-any source 10.102.136.0 0.0.3.255
+ rule 122 description BEHIND-MNGT-SYSTEM-FW
+ rule 123 permit vpn-instance-any source 10.220.60.0 0.0.3.255
+ rule 123 description BEHIND-MNGT-SYSTEM-FW
+ rule 124 permit vpn-instance-any source 10.220.48.0 0.0.7.255
+ rule 124 description BEHIND-MNGT-SYSTEM-FW
+ rule 125 permit vpn-instance-any source 10.220.40.0 0.0.3.255
+ rule 125 description BEHIND-MNGT-SYSTEM-FW
+ rule 126 permit vpn-instance-any source 10.222.232.0 0.0.3.255
+ rule 126 description BEHIND-MNGT-SYSTEM-FW
+#
+acl name iptv-channel-groups basic
+ rule 10 permit source 233.88.168.0 0.0.0.255
+ rule 20 permit source 233.26.166.0 0.0.0.255
+ rule 30 permit source 233.21.46.0 0.0.0.255
+ rule 40 permit source 232.0.255.0 0.0.0.255
+#
+acl number 3001
+ rule 1 permit  ip vpn-instance-any source 10.35.175.1 0
+ rule 1 description sso
+ rule 2 permit  ip vpn-instance-any source 10.35.175.4 0
+ rule 2 description sso
+ rule 3 permit  ip vpn-instance-any source 10.35.175.5 0
+ rule 3 description sso
+ rule 10 permit  ip vpn-instance-any source 10.35.82.140 0
+ rule 20 permit  ip vpn-instance-any source 10.35.82.129 0
+ rule 21 permit  ip vpn-instance-any source 10.40.75.205 0
+ rule 30 permit  ip vpn-instance-any source 82.222.32.141 0
+ rule 40 permit  ip vpn-instance-any source 213.74.189.82 0
+ rule 50 permit  ip vpn-instance-any source 10.35.93.66 0
+ rule 51 permit  ip vpn-instance-any source 10.35.93.67 0
+ rule 60 permit  ip vpn-instance-any source 10.35.91.128 0.0.0.127
+ rule 70 permit  ip vpn-instance-any source 10.201.232.62 0
+ rule 80 permit  ip vpn-instance-any source 10.210.161.11 0
+ rule 81 permit  ip vpn-instance-any source 10.210.161.12 0
+ rule 82 permit  ip vpn-instance-any source 10.210.161.239 0
+ rule 90 permit  ip vpn-instance-any source 10.210.76.163 0
+ rule 100 permit  ip vpn-instance-any source 10.35.173.81 0
+ rule 101 permit  ip vpn-instance-any source 10.35.173.82 0
+ rule 102 permit  ip vpn-instance-any source 10.35.173.83 0
+ rule 110 permit  ip vpn-instance-any source 10.56.33.170 0
+ rule 111 permit  ip vpn-instance-any source 10.56.33.172 0
+ rule 112 permit  ip vpn-instance-any source 10.56.33.173 0
+ rule 130 permit  ip vpn-instance-any source 10.31.26.16 0.0.0.7
+ rule 150 permit  ip vpn-instance-any source 213.74.189.192 0.0.0.63
+ rule 150 description SPECTRUM
+ rule 160 permit  ip vpn-instance-any source 10.222.244.0 0.0.3.255
+ rule 160 description MANAGEMENT_IP_BLOCKS
+ rule 170 permit  ip vpn-instance-any source 10.31.254.0 0.0.0.31
+ rule 170 description MSTV
+ rule 180 permit  ip vpn-instance-any source 172.18.58.168 0
+ rule 180 description SANAL_IPAO
+ rule 190 permit  ip vpn-instance-any source 172.18.58.136 0
+ rule 190 description Devnet_IP
+ rule 191 permit  ip vpn-instance-any source 172.18.58.137 0
+ rule 191 description Devnet_IP
+ rule 200 permit  ip vpn-instance-any source 172.18.58.140 0
+ rule 200 description TEAM_FICO_SERVER
+ rule 201 permit  ip vpn-instance-any source 172.18.58.141 0
+ rule 201 description TEAM_FICO_SERVER
+ rule 210 permit  ip vpn-instance-any source 10.40.74.51 0
+ rule 210 description ADRNIM
+ rule 211 permit  ip vpn-instance-any source 10.40.74.52 0
+ rule 211 description ADRNIM
+ rule 212 permit  ip vpn-instance-any source 10.40.74.53 0
+ rule 212 description ADRNIM
+ rule 213 permit  ip vpn-instance-any source 10.56.36.11 0
+ rule 213 description ADRNIM
+ rule 214 permit  ip vpn-instance-any source 10.56.36.12 0
+ rule 214 description ADRNIM
+ rule 215 permit  ip vpn-instance-any source 10.102.136.0 0.0.3.255
+ rule 215 description BEHIND-MNGT-SYSTEM-FW
+ rule 216 permit  ip vpn-instance-any source 10.220.60.0 0.0.3.255
+ rule 216 description BEHIND-MNGT-SYSTEM-FW
+ rule 217 permit  ip vpn-instance-any source 10.220.48.0 0.0.7.255
+ rule 217 description BEHIND-MNGT-SYSTEM-FW
+ rule 218 permit  ip vpn-instance-any source 10.220.40.0 0.0.3.255
+ rule 218 description BEHIND-MNGT-SYSTEM-FW
+ rule 219 permit  ip vpn-instance-any source 10.222.232.0 0.0.3.255
+ rule 219 description BEHIND-MNGT-SYSTEM-FW
+#
+acl name match-icmp advance
+ rule 10 permit icmp
+#
+acl name ipoe-control-in advance
+ rule 10 permit ip destination 224.0.0.0 31.255.255.255
+ rule 20 permit udp source 0.0.0.0 0 source-port eq bootpc destination 255.255.255.255 0 destination-port eq bootps
+ rule 50 permit ip source 100.64.0.0 0.63.255.255 destination 172.31.130.0 0.0.1.255
+ rule 60 permit ip source 100.64.0.0 0.63.255.255 destination 172.31.132.0 0.0.3.255
+ rule 70 permit ip source 100.64.0.0 0.63.255.255 destination 172.31.136.0 0.0.1.255
+ rule 71 permit ip source 100.64.0.0 0.63.255.255 destination 172.31.152.0 0.0.0.255
+ rule 72 permit ip source 100.64.0.0 0.63.255.255 destination 10.31.0.0 0.0.255.255
+ rule 80 permit ip source 100.64.0.0 0.63.255.255 destination 176.43.0.0 0.0.0.255
+ rule 81 permit ip source 100.64.0.0 0.63.255.255 destination 176.235.0.0 0.0.15.255
+ rule 90 permit ip source 100.64.0.0 0.63.255.255 destination 213.74.0.1 0
+ rule 100 permit ip source 100.64.0.0 0.63.255.255 destination 213.74.1.1 0
+ rule 110 permit ip source 100.64.0.0 0.63.255.255 destination 10.34.82.0 0.0.0.255
+ rule 120 permit ip source 100.64.0.0 0.63.255.255 destination 10.34.83.0 0.0.0.255
+ rule 130 permit ip source 100.64.0.0 0.63.255.255 destination 172.31.173.128 0.0.0.127
+ rule 140 permit ip source 100.64.0.0 0.63.255.255 destination 213.74.177.187 0
+ rule 150 permit udp source 100.64.0.0 0.63.255.255 destination 100.64.0.0 0.63.255.255 destination-port eq 3784
+ rule 160 permit ip source 100.64.0.0 0.63.255.255 destination 85.153.240.0 0.0.15.255
+ rule 170 permit ip source 100.64.0.0 0.63.255.255 destination 10.63.0.0 0.0.15.255
+ rule 10000 deny ip
+#
+acl name ip advance
+ rule 10 permit ip
+#
+acl name l3protocols advance
+ rule 10 permit ospf
+ rule 20 permit tcp source-port eq bgp
+ rule 30 permit tcp destination-port eq bgp
+ rule 40 permit udp source-port eq 646 destination-port eq 646
+ rule 50 permit tcp destination-port eq 646
+ rule 60 permit tcp source-port eq 646
+ rule 70 permit udp source-port eq rip destination-port eq rip
+#
+acl name qoe-probe-security advance
+rule 10 permit tcp source 10.36.21.239 0 destination-port eq www
+rule 11 permit ip source 10.0.0.0 0.255.255.255
+rule 12 permit tcp source 10.0.0.0 0.255.255.255 destination-port range 22 telnet
+rule 20 permit ip source 10.36.21.240 0
+rule 30 permit tcp source 10.36.21.239 0 destination-port eq 909
+rule 50 permit tcp source 10.36.21.239 0 destination-port eq 3353
+rule 70 permit tcp source 85.29.8.182 0 destination-port range 22 telnet
+rule 80 permit tcp source 172.31.1.0 0.0.0.255 destination-port range 22 telnet
+rule 90 permit tcp source 172.31.2.0 0.0.0.255 destination-port range 22 telnet
+rule 100 permit tcp source 172.31.16.0 0.0.1.255 destination-port range 22 telnet
+rule 110 permit tcp source 172.31.100.0 0.0.0.255 destination-port range 22 telnet
+rule 120 permit tcp source 172.31.38.0 0.0.1.255 destination-port range 22 telnet
+rule 130 permit tcp source 172.31.40.0 0.0.3.255 destination-port range 22 telnet
+rule 140 permit tcp source 172.31.8.0 0.0.0.255 destination-port range 22 telnet
+rule 150 permit tcp source 172.31.72.0 0.0.0.255 destination-port range 22 telnet
+rule 160 permit tcp source 85.29.8.182 0 destination-port eq www
+rule 170 permit tcp source 172.31.1.0 0.0.0.255 destination-port eq www
+rule 180 permit tcp source 172.31.2.0 0.0.0.255 destination-port eq www
+rule 190 permit tcp source 172.31.16.0 0.0.1.255 destination-port eq www
+rule 200 permit tcp source 172.31.100.0 0.0.0.255 destination-port eq www
+rule 210 permit tcp source 172.31.38.0 0.0.1.255 destination-port eq www
+rule 220 permit tcp source 172.31.40.0 0.0.3.255 destination-port eq www
+rule 230 permit tcp source 172.31.8.0 0.0.0.255 destination-port eq www
+rule 240 permit tcp source 172.31.72.0 0.0.0.255 destination-port eq www
+rule 250 permit tcp source 85.29.8.182 0 destination-port eq 443
+rule 260 permit tcp source 172.31.1.0 0.0.0.255 destination-port eq 443
+rule 270 permit tcp source 172.31.2.0 0.0.0.255 destination-port eq 443
+rule 280 permit tcp source 172.31.16.0 0.0.1.255 destination-port eq 443
+rule 290 permit tcp source 172.31.100.0 0.0.0.255 destination-port eq 443
+rule 300 permit tcp source 172.31.38.0 0.0.1.255 destination-port eq 443
+rule 310 permit tcp source 172.31.40.0 0.0.3.255 destination-port eq 443
+rule 320 permit tcp source 172.31.8.0 0.0.0.255 destination-port eq 443
+rule 330 permit tcp source 172.31.72.0 0.0.0.255 destination-port eq 443
+rule 340 permit ip destination 224.0.0.0 31.255.255.255
+rule 362 permit ip source 10.250.30.0 0.0.0.255
+rule 10000 deny ip
+#
+acl name int-cust-ipv4-drop advance
+rule 10 deny ip destination 100.64.0.0 0.63.255.255
+rule 11 deny ip source 100.64.0.0 0.63.255.255
+#
+acl ipv6 name int-cust-ipv6-drop advance
+rule 20 deny ipv6 source ::/128
+rule 20 description unspecified_as_source
+rule 21 deny ipv6 destination ::/128
+rule 21 description unspecified_as_dest
+rule 30 deny ipv6 source ::1/128
+rule 30 description loopback_as_source
+rule 31 deny ipv6 destination ::1/128
+rule 31 description loopback_as_dest
+rule 40 deny ipv6 source ::ffff:0:0/96
+rule 40 description IPv4_mapped_as_source
+rule 41 deny ipv6 destination ::ffff:0:0/96
+rule 41 description IPv4_mapped_as_dest
+rule 50 deny ipv6 source 64:ff9b::/96
+rule 50 description IPv4-IPv6_translat_as_source
+rule 51 deny ipv6 destination 64:ff9b::/96
+rule 51 description IPv4-IPv6_translat_as_dest
+rule 60 deny ipv6 source 64:ff9b:1::/48
+rule 60 description IPv4-IPv6_translat_as_source
+rule 61 deny ipv6 destination 64:ff9b:1::/48
+rule 61 description IPv4-IPv6_translat_as_dest
+rule 70 deny ipv6 source 100::/64
+rule 70 description discard_only _as_source
+rule 71 deny ipv6 destination 100::/64
+rule 71 description discard_only _as_dest
+rule 80 deny ipv6 source fc00::/7
+rule 80 description ula_as_source
+rule 81 deny ipv6 destination fc00::/7
+rule 81 description ula_as_dest
+rule 82 deny ipv6 source 2001::/23
+rule 82 description ietf_protocol_as_source
+rule 83 deny ipv6 destination 2001::/23
+rule 83 description ietf_protocol_as_dest
+rule 90 deny ipv6 source 2002::/16
+rule 90 description 6to4_as_source
+rule 91 deny ipv6 destination 2002::/16
+rule 91 description 6to4_as_dest
+rule 100 permit ipv6 source ff02::/16
+rule 100 description mcast_link_local_as_source
+rule 101 permit ipv6 destination  ff02::/16
+rule 101 description mcast_link_local_as_des
+rule 110 deny ipv6 source ff00::/8
+rule 110 description mcast_as_source
+rule 111 deny ipv6 destination ff00::/8
+rule 111 description mcast_as_dest
+#
+acl number 4000
+ description only_pppoe_traffic_is_permitted
+ rule 80 permit type 0x8863
+ rule 90 permit type 0x8864
+ rule 100 deny
+#
+acl number 4500
+ rule 10 permit type arp
+#
+traffic classifier qoe-probe-security operator or
+if-match acl name qoe-probe-security
+#
+traffic classifier ipprec2 operator or
+ if-match ip-precedence 2
+traffic classifier af13 operator or
+ if-match dscp af13
+traffic classifier ipprec3 operator or
+ if-match ip-precedence 3
+traffic classifier ef operator or
+ if-match dscp ef
+traffic classifier af21 operator or
+ if-match dscp af21
+traffic classifier af33 operator or
+ if-match dscp af33
+traffic classifier ipprec4 operator or
+ if-match ip-precedence 4
+traffic classifier ip operator or
+ if-match acl name ip
+traffic classifier af41 operator or
+ if-match dscp af41
+traffic classifier ipprec5 operator or
+ if-match ip-precedence 5
+traffic classifier ipprec6 operator or
+ if-match ip-precedence 6
+traffic classifier ipprec67 operator or
+ if-match ip-precedence 6
+ if-match ip-precedence 7
+traffic classifier match-icmp operator or
+ if-match acl name match-icmp
+traffic classifier l2protocols operator or
+ if-match acl 4500
+traffic classifier ipprec7 operator or
+ if-match ip-precedence 7
+traffic classifier af22 operator or
+ if-match dscp af22
+traffic classifier af42 operator or
+ if-match dscp af42
+traffic classifier af11 operator or
+ if-match dscp af11
+traffic classifier af23 operator or
+ if-match dscp af23
+traffic classifier any operator or
+ if-match any
+traffic classifier pppoe-traffic operator or
+ if-match acl 4000
+traffic classifier af31 operator or
+ if-match dscp af31
+traffic classifier af43 operator or
+ if-match dscp af43
+traffic classifier l3protocols operator or
+ if-match acl name l3protocols
+traffic classifier ipoe-control-in operator or
+ if-match acl name ipoe-control-in
+traffic classifier af12 operator or
+ if-match dscp af12
+traffic classifier ipprec0 operator or
+ if-match ip-precedence 0
+traffic classifier af32 operator or
+ if-match dscp af32
+traffic classifier ipprec1 operator or
+ if-match ip-precedence 1
+#
+traffic classifier int-cust-ipv4-drop operator or
+if-match acl name int-cust-ipv4-drop
+#
+traffic classifier int-cust-ipv6-drop operator or
+if-match ipv6 acl name int-cust-ipv6-drop
+#
+traffic behavior af2-dscp-remark
+ service-class af2 color green no-remark
+ remark dscp af21
+traffic behavior ef
+ service-class ef color green no-remark
+traffic behavior af4-dscp-remark
+ service-class af4 color green no-remark
+ remark dscp af41
+traffic behavior cs6-dscp-remark
+ service-class cs6 color green no-remark
+ remark dscp cs6
+traffic behavior af1
+ service-class af1 color green no-remark
+traffic behavior af3
+ service-class af3 color green no-remark
+traffic behavior business
+ service-class af1 color green no-remark
+traffic behavior internet-trustdscp
+ service-class be color green no-remark
+traffic behavior cs7
+ service-class cs7 color green no-remark
+traffic behavior l2protocols
+ car cir 64 cbs 11968 green pass red discard
+ remark 8021p 6
+traffic behavior icmp-limit
+ car cir 1000 cbs 187000 green pass red discard
+traffic behavior af1-dscp-remark
+ service-class af1 color green no-remark
+ remark dscp af11
+traffic behavior af3-dscp-remark
+ service-class af3 color green no-remark
+ remark dscp af31
+traffic behavior pppoe-traffic-permit
+ permit
+traffic behavior premium
+ service-class af2 color green no-remark
+traffic behavior business-cos1
+ remark 8021p 1
+ service-class af1 color green no-remark
+traffic behavior cs7-dscp-remark
+ service-class cs7 color green no-remark
+ remark dscp cs7
+traffic behavior af2
+ service-class af2 color green no-remark
+traffic behavior ef-dscp-remark
+ service-class ef color green no-remark
+ remark dscp ef
+traffic behavior internet
+ remark dscp default
+ remark mpls-exp 0
+traffic behavior af4
+ service-class af4 color green no-remark
+traffic behavior premium-cos2
+ remark 8021p 2
+ service-class af2 color green no-remark
+traffic behavior cs6
+ service-class cs6 color green no-remark
+traffic behavior iptv
+ service-class af3 color green no-remark
+ remark dscp af31
+traffic behavior l3protocols
+ car cir 256 cbs 47872 green pass red discard
+ remark 8021p 6
+traffic behavior be-dscp-remark
+ service-class be color green no-remark
+ remark dscp default
+traffic behavior deny
+ deny
+traffic behavior permit-all
+ permit
+traffic behavior voice
+ service-class ef color green no-remark
+#
+traffic policy qoe-probe
+share-mode
+classifier qoe-probe-security behavior permit-all precedence 1
+#
+traffic policy fullmesh-p-layer-prob
+share-mode
+classifier match-icmp behavior permit-all precedence 1
+#
+traffic policy mcast_signaling-remark
+share-mode
+statistics enable
+classifier any behavior af4-dscp-remark precedence 1
+#
+traffic policy soltraffic
+ share-mode
+ statistics enable
+traffic policy business
+ share-mode
+ statistics enable
+ classifier any behavior business
+traffic policy internet-trustdscp
+ share-mode
+ statistics enable
+ classifier any behavior internet-trustdscp
+traffic policy protocols-outbound
+ share-mode
+ statistics enable
+ classifier l3protocols behavior l3protocols
+ classifier l2protocols behavior l2protocols
+traffic policy soltraffic-remark
+ share-mode
+ statistics enable
+ classifier any behavior af3-dscp-remark
+traffic policy premium
+ share-mode
+ statistics enable
+ classifier any behavior premium
+traffic policy l2protocols-outbound
+ share-mode
+ statistics enable
+ classifier l2protocols behavior l2protocols
+traffic policy business-cos1
+ share-mode
+ statistics enable
+ classifier l3protocols behavior l3protocols
+ classifier l2protocols behavior l2protocols
+ classifier any behavior business-cos1
+traffic policy internet
+share-mode
+statistics enable
+classifier int-cust-ipv4-drop behavior internet precedence 1
+classifier int-cust-ipv6-drop behavior internet precedence 2
+classifier any behavior internet precedence 3
+traffic policy premium-cos2
+ share-mode
+ statistics enable
+ classifier l3protocols behavior l3protocols
+ classifier l2protocols behavior l2protocols
+ classifier any behavior premium-cos2
+traffic policy allow-only-pppoe-traffic
+ share-mode
+ statistics enable
+ classifier pppoe-traffic behavior pppoe-traffic-permit
+traffic policy ipoe-control-in
+ share-mode
+ statistics enable
+ classifier match-icmp behavior icmp-limit
+ classifier ipoe-control-in behavior iptv
+traffic policy voice
+ share-mode
+ statistics enable
+ classifier any behavior voice
+#
+traffic policy voice-remark
+share-mode
+statistics enable
+classifier any behavior ef-dscp-remark precedence 1
+#
+ip ip-prefix local-loopback permit {{LOOPBACK0_IP_ADDRESS}} 32
+ip ip-prefix Access-to-Core index 10 permit 0.0.0.0 32
+ip ip-prefix bypass-dpi-kpe-test index 10 permit 224.1.0.1 32
+ip ip-prefix loopback-from-core-to-access index 10 permit {{LOOPBACK0_IP_ADDRESS}} 32
+ip ip-prefix default index 10 permit 0.0.0.0 0
+ip ip-prefix pref-13to24 index 10 permit 0.0.0.0 0 greater-equal 13 less-equal 24
+ip ip-prefix pref-25to32 index 10 permit 0.0.0.0 0 greater-equal 25 less-equal 32
+ip ip-prefix rfc6598 index 10 permit 100.64.0.0 10 greater-equal 10 less-equal 32
+ip ip-prefix rfc3330 index 15 permit 0.0.0.0 8 match-network greater-equal 8 less-equal 32
+ip ip-prefix rfc3330 index 35 permit 127.0.0.0 8 greater-equal 8 less-equal 32
+ip ip-prefix rfc3330 index 45 permit 169.254.0.0 16 greater-equal 16 less-equal 32
+ip ip-prefix rfc3330 index 50 permit 191.255.0.0 16 greater-equal 16 less-equal 32
+ip ip-prefix rfc3330 index 55 permit 192.0.0.0 24 greater-equal 24 less-equal 32
+ip ip-prefix rfc3330 index 60 permit 192.0.2.0 24 greater-equal 24 less-equal 32
+ip ip-prefix rfc3330 index 65 permit 192.88.99.0 24 greater-equal 24 less-equal 32
+ip ip-prefix rfc3330 index 70 permit 198.18.0.0 15 greater-equal 15 less-equal 32
+ip ip-prefix rfc3330 index 75 permit 223.255.255.0 24 greater-equal 24 less-equal 32
+ip ip-prefix rfc3330 index 80 permit 224.0.0.0 4 greater-equal 4 less-equal 32
+ip ip-prefix rfc1918 index 10 permit 10.0.0.0 8 greater-equal 8 less-equal 32
+ip ip-prefix rfc1918 index 15 permit 172.16.0.0 12 greater-equal 12 less-equal 32
+ip ip-prefix rfc1918 index 20 permit 192.168.0.0 16 greater-equal 16 less-equal 32
+ip ip-prefix ipoe-dhcp-blocks index 10 permit 100.64.0.0 10 less-equal 32
+ip ip-prefix reject-all index 10 permit 0.0.0.0 0 less-equal 32
+ip ip-prefix management-and-voip index 1000 deny 127.0.0.1 32
+ip ip-prefix only-loopback index 10 permit 0.0.0.0 32
+ip ip-prefix only-host index 10 permit 0.0.0.0 32
+ip ip-prefix management-888 index 10 permit 92.45.4.164 30
+ip ip-prefix management-888 index 20 permit 92.45.0.0 27
+ip ip-prefix management-888 index 30 permit 213.74.189.104 29
+ip ip-prefix management-888 index 40 permit 176.43.137.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management-888 index 1000 deny 127.0.0.1 32
+ip ip-prefix management_subnets index 10 permit 195.33.242.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 20 permit 195.33.251.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 30 permit 176.43.137.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 40 permit 176.43.138.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 50 permit 176.43.0.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 60 permit 176.43.250.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 70 permit 212.252.203.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 80 permit 85.29.60.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 90 permit 85.29.61.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 100 permit 85.29.57.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 110 permit 92.45.45.0 24 greater-equal 24 less-equal 32
+ip ip-prefix management_subnets index 120 permit 92.45.53.0 24 greater-equal 24 less-equal 32
+ip ip-prefix mstv_subnets index 10 permit 176.43.0.0 24 less-equal 32
+ip ip-prefix mstv_subnets index 20 permit 176.235.0.0 20 less-equal 32
+ip ip-prefix isis-rib-critical description drcpe_mcastsource_mcastswitch_loopbacks
+ip ip-prefix isis-rib-critical index 10 permit 172.31.239.0 24 greater-equal 32 less-equal 32
+ip ip-prefix isis-rib-critical index 20 permit 176.235.6.4 32
+ip ip-prefix isis-rib-critical index 30 permit 176.235.6.7 32
+ip ip-prefix isis-rib-critical index 40 permit 176.43.0.179 32
+ip ip-prefix isis-rib-critical index 50 permit 176.43.0.182 32
+ip ip-prefix isis-rib-critical index 60 permit 176.235.12.68 32
+ip ip-prefix isis-rib-critical index 70 permit 176.235.12.69 32
+ip ip-prefix isis-rib-critical index 80 permit 176.235.12.70 32
+ip ip-prefix isis-rib-critical index 90 permit 176.235.12.71 32
+ip ip-prefix isis-rib-critical index 100 permit 10.38.200.18 32
+ip ip-prefix isis-rib-critical index 110 permit 10.38.200.22 32
+ip ip-prefix isis-rib-critical index 120 permit 10.38.200.236 32
+ip ip-prefix isis-rib-critical index 130 permit 10.38.200.237 32
+ip ip-prefix isis-rib-critical index 140 permit 10.38.200.238 32
+ip ip-prefix isis-rib-high index 10 permit 0.0.0.0 32
+#
+ip ipv6-prefix pref-24to48 permit :: 0 greater-equal 24 less-equal 48
+ip ipv6-prefix pref-49to128 permit :: 0 greater-equal 49 less-equal 128
+ip ipv6-prefix ipv6-default-route permit :: 0
+ip ipv6-prefix pref-128 permit :: 0 greater-equal 128 less-equal 128
+ip ipv6-prefix ipv6-bogons index 10 permit :: 128
+ip ipv6-prefix ipv6-bogons index 20 permit ::1 128
+ip ipv6-prefix ipv6-bogons index 30 permit fc00:: 7 less-equal 128
+ip ipv6-prefix ipv6-bogons index 40 permit fe80:: 10 less-equal 128
+ip ipv6-prefix ipv6-bogons index 50 permit 2001:2:: 48 less-equal 128
+ip ipv6-prefix ipv6-bogons index 60 permit 2001:10:: 28 less-equal 128
+ip ipv6-prefix ipv6-bogons index 70 permit 2001:db8:: 32 less-equal 128
+ip ipv6-prefix ipv6-bogons index 80 permit ff00:: 8  less-equal 128
+#
+ip as-path-filter 1 permit ^$
+ip as-path-filter origin_sol permit ^$
+#
+ip community-filter basic arbor-internal-protection index 10 permit 34984:800
+ip community-filter basic ebgp-customers permit 34984:123
+ip community-filter basic ebgp-private-as-customers permit 34984:456
+ip community-filter basic sol-customer-yedek index 10 permit 34984:5
+ip community-filter basic sol-customer-asprepend index 10 permit 34984:6
+ip community-filter basic sol-bh444 index 10 permit 34984:444
+ip community-filter basic sol-bh666 index 10 permit 34984:666
+ip community-filter basic sol-null0 index 10 permit 34984:0
+ip community-filter basic yasaklilar index 10 permit 34984:4444
+ip community-filter basic provider index 10 permit 34984:1111
+ip community-filter basic all-peering index 10 permit 34984:3000
+ip community-filter basic peering-domestic-paid index 10 permit 34984:3300
+ip community-filter basic peering-domestic-public index 10 permit 34984:3400
+ip community-filter basic peering-domestic-private index 10 permit 34984:3500
+ip community-filter basic labeled-bgp-npe-community index 10 permit 65172:65535
+ip community-filter basic labeled-bgp-mobilepe-community index 10 permit 65172:65534
+ip community-filter basic labeled-bgp-secgw-community index 10 permit 65172:65533
+ip community-filter basic labeled-bgp-dcpe-community index 10 permit 65172:65532
+ip community-filter basic labeled-bgp-upe-community index 10 permit 65172:65531
+ip community-filter advanced labeled-bgp-all-communities permit 65172:*
+ip community-filter advanced all-dc-subnets permit  65130:*
+ip community-filter advanced all-bng-subnets permit  65150:*
+ip community-filter advanced all-cgn-subnets permit  65160:*
+ip community-filter advanced all-tcell-internet-subnets permit  65101:*
+ip community-filter basic tnap permit 34984:3434
+#
+ip extcommunity-filter basic management-888 permit rt 34984:888
+#
+ip route-static default-preference 1
+ipv6 route-static  fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff 128 NULL 0 tag 5
+#
+route recursive-lookup tunnel
+#
+ip route-static 172.31.222.222 255.255.255.255 NULL0 tag 5 description discard-route
+ipv6 route-static FDFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF 128 NULL0 tag 5 description discard-route
+#
+route-policy add-tag-100 permit node 10
+ apply tag 100
+#
+route-policy Access-to-Core deny node 10
+ if-match tag 100
+route-policy Access-to-Core permit node 20
+ if-match ip-prefix Access-to-Core
+route-policy Access-to-Core deny node 1000
+#
+route-policy Core-to-Access permit node 10
+ if-match ip-prefix loopback-from-core-to-access
+ apply tag 100
+route-policy Core-to-Access deny node 1000
+#
+route-policy connected-into-bgp permit node 10
+ if-match ip-prefix pref-13to24
+#
+route-policy connected-into-bgp permit node 20
+ if-match ip-prefix pref-25to32
+ apply community no-export additive
+#
+route-policy connected-into-bgp deny node 500
+#
+route-policy static-into-bgp deny node 10
+ if-match ip-prefix default
+#
+route-policy static-into-bgp deny node 20
+ if-match tag 5
+#
+route-policy static-into-bgp permit node 30
+ if-match tag 6
+ apply local-preference 50
+#
+route-policy static-into-bgp permit node 40
+ if-match tag 10
+ apply local-preference 250
+#
+route-policy static-into-bgp permit node 50
+ if-match ip-prefix pref-13to24
+#
+route-policy static-into-bgp permit node 60
+ if-match ip-prefix pref-25to32
+ apply community no-export additive
+#
+route-policy static-into-bgp deny node 500
+#
+route-policy static-into-bgp-vrf deny node 10
+ if-match tag 5
+#
+route-policy static-into-bgp-vrf permit node 30
+ if-match tag 6
+ apply local-preference 50
+#
+route-policy static-into-bgp-vrf permit node 40
+ if-match tag 10
+ apply local-preference 250
+#
+route-policy static-into-bgp-vrf permit node 500
+#
+route-policy reject-all deny node 10
+ if-match ip-prefix reject-all
+#
+route-policy ibgp-export-to-rr deny node 10
+ if-match ip-prefix default
+#
+route-policy ibgp-export-to-rr deny node 15
+ if-match ip-prefix local-loopback
+#
+route-policy ibgp-export-to-rr deny node 16
+ if-match mpls-label
+#
+route-policy ibgp-export-to-rr permit node 20
+ if-match ip-prefix ipoe-dhcp-blocks
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 30
+ if-match ip-prefix management-and-voip
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr deny node 40
+ if-match ip-prefix rfc1918
+#
+route-policy ibgp-export-to-rr deny node 50
+ if-match ip-prefix rfc3330
+#
+route-policy ibgp-export-to-rr permit node 60
+ if-match ip-prefix pref-13to24
+ if-match community-filter ebgp-customers
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 70
+ if-match ip-prefix pref-13to24
+ if-match community-filter ebgp-private-as-customers
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 80
+ if-match ip-prefix pref-25to32
+ if-match community-filter ebgp-customers
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 90
+ if-match ip-prefix pref-25to32
+ if-match community-filter ebgp-private-as-customers
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 100
+ if-match community-filter peering-domestic-paid
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 110
+ if-match community-filter peering-domestic-private
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 120
+ if-match community-filter peering-domestic-public
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 130
+ if-match ip-prefix pref-13to24
+ if-match as-path-filter 1
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr permit node 140
+ if-match ip-prefix pref-25to32
+ if-match as-path-filter 1
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ibgp-export-to-rr deny node 500
+#
+route-policy ibgp-import-from-rr permit node 10
+ if-match ip-prefix default
+ apply ip-address next-hop {{KPE_ANYCAST_LOOPBACK}}
+#
+route-policy ibgp-import-from-rr permit node 20
+ if-match community-filter arbor-internal-protection
+#
+route-policy ibgp-import-from-rr permit node 30
+ if-match community-filter sol-bh666
+ if-match community-filter sol-null0
+ if-match community-filter yasaklilar
+ apply ip-address next-hop 172.31.222.222
+#
+route-policy ibgp-import-from-rr permit node 40
+ if-match ip-prefix bypass-dpi-kpe-test
+#
+route-policy ibgp-import-from-rr permit node 50
+ if-match ip-prefix rfc1918
+#
+route-policy ibgp-import-from-rr permit node 51
+ if-match ip-prefix ipoe-dhcp-blocks
+#
+route-policy ibgp-import-from-rr permit node 52
+ if-match ip-prefix mstv_subnets
+#
+route-policy ibgp-import-from-rr permit node 53
+ if-match ip-prefix management_subnets
+#
+route-policy ibgp-import-from-rr permit node 60
+ if-match community-filter all-dc-subnets
+ if-match community-filter all-bng-subnets
+ if-match community-filter all-cgn-subnets
+ if-match community-filter all-tcell-internet-subnets
+#
+route-policy ibgp-import-from-rr permit node 500
+ apply ip-address next-hop {{KPE_ANYCAST_LOOPBACK}}
+#
+route-policy ebgp-default-route-export permit node 10
+if-match ip-prefix default
+#
+route-policy ebgp-default-route-export deny node 500
+#
+route-policy ebgp-full-route-export permit node 10
+#
+route-policy ebgp-full-route-without-default-export deny node 10
+if-match ip-prefix default
+#
+route-policy ebgp-full-route-without-default-export permit node 20
+#
+route-policy local-preference-50 permit node 10
+ apply local-preference 50
+#
+route-policy local-preference-75 permit node 10
+ apply local-preference 75
+#
+route-policy local-preference-100 permit node 10
+ apply local-preference 100
+#
+route-policy local-preference-125 permit node 10
+ apply local-preference 125
+#
+route-policy local-preference-150 permit node 10
+ apply local-preference 150
+#
+route-policy local-preference-175 permit node 10
+ apply local-preference 175
+#
+route-policy local-preference-200 permit node 10
+ apply local-preference 200
+#
+route-policy local-preference-225 permit node 10
+ apply local-preference 225
+#
+route-policy local-preference-250 permit node 10
+ apply local-preference 250
+#
+route-policy local-preference-275 permit node 10
+ apply local-preference 275
+#
+route-policy local-preference-300 permit node 10
+ apply local-preference 300
+#
+route-policy local-preference-325 permit node 10
+ apply local-preference 325
+#
+route-policy local-preference-350 permit node 10
+ apply local-preference 350
+#
+route-policy local-preference-375 permit node 10
+ apply local-preference 375
+#
+route-policy only-loopback permit node 10
+ if-match ip-prefix only-loopback
+#
+route-policy only-host permit node 10
+ if-match ip-prefix only-host
+#
+route-policy management-888-import permit node 10
+if-match ip-prefix management-888
+if-match extcommunity-filter management-888
+#
+route-policy management-888-import deny node 20
+if-match extcommunity-filter management-888
+#
+route-policy management-888-import permit node 50
+#
+route-policy vpnv4-bgp-pic-policy permit node 10
+#
+route-policy vpnv4-bgp-pic-policy deny node 500
+#
+route-policy deny-default-and-permit-all deny node 10
+if-match ip-prefix default
+#
+route-policy deny-default-and-permit-all permit node 50
+#
+route-policy ibgp-import-from-labeled-rr permit node 100
+ if-match mpls-label
+ if-match community-filter labeled-bgp-all-communities
+#
+route-policy ibgp-export-to-labeled-rr permit node 15
+ if-match community-filter  labeled-bgp-all-communities
+ if-match mpls-label
+ apply mpls-label
+#
+route-policy ibgp-export-to-labeled-rr permit node 20
+ if-match ip-prefix local-loopback
+ apply mpls-label
+ apply community 65172:65531 additive
+#
+route-policy ibgp-export-to-labeled-rr deny node 100
+#
+route-policy dummy-deny-all deny node 10
+#
+route-policy ebgp-export-to-cust-full-no-default deny node 10
+if-match ip-prefix default
+#
+route-policy ebgp-export-to-cust-full-no-default deny node 20
+if-match ip-prefix rfc1918
+#
+route-policy ebgp-export-to-cust-full-no-default deny node 30
+if-match ip-prefix rfc3330
+#
+route-policy ebgp-export-to-cust-full-no-default deny node 40
+if-match ip-prefix rfc6598
+#
+route-policy ebgp-export-to-cust-full-no-default deny node 50
+if-match ip-prefix pref-25to32
+#
+route-policy ebgp-export-to-cust-full-no-default permit node 60
+if-match community-filter provider
+#
+route-policy ebgp-export-to-cust-full-no-default permit node 70
+if-match community-filter all-peering
+#
+route-policy ebgp-export-to-cust-full-no-default permit node 80
+if-match community-filter ebgp-customers
+#
+route-policy ebgp-export-to-cust-full-no-default permit node 90
+if-match community-filter ebgp-private-as-customers
+ #
+route-policy ebgp-export-to-cust-full-no-default permit node 100
+if-match as-path-filter 1
+#
+route-policy ebgp-export-to-cust-full permit node 5
+if-match ip-prefix default
+#
+route-policy ebgp-export-to-cust-full deny node 10
+if-match ip-prefix rfc1918
+#
+route-policy ebgp-export-to-cust-full deny node 20
+if-match ip-prefix rfc3330
+#
+route-policy ebgp-export-to-cust-full deny node 30
+if-match ip-prefix rfc6598
+#
+route-policy ebgp-export-to-cust-full deny node 40
+if-match ip-prefix pref-25to32
+#
+route-policy ebgp-export-to-cust-full permit node 50
+if-match community-filter provider
+#
+route-policy ebgp-export-to-cust-full permit node 60
+if-match community-filter all-peering
+#
+route-policy ebgp-export-to-cust-full permit node 70
+if-match community-filter ebgp-customers
+#
+route-policy ebgp-export-to-cust-full permit node 80
+if-match community-filter ebgp-private-as-customers
+#
+route-policy ebgp-export-to-cust-full permit node 90
+if-match as-path-filter 1
+ #
+route-policy ebgp-export-to-cust-default-only permit node 10
+ if-match ip-prefix default
+#
+route-policy ebgp-export-to-cust-tcellnetwork permit node 5
+if-match ip-prefix default
+#
+route-policy ebgp-export-to-cust-tcellnetwork deny node 10
+if-match ip-prefix rfc1918
+#
+route-policy ebgp-export-to-cust-tcellnetwork deny node 20
+if-match ip-prefix rfc3330
+#
+route-policy ebgp-export-to-cust-tcellnetwork deny node 30
+if-match ip-prefix rfc6598
+#
+route-policy ebgp-export-to-cust-tcellnetwork deny node 40
+if-match ip-prefix pref-25to32
+#
+route-policy ebgp-export-to-cust-tcellnetwork permit node 60
+if-match community-filter ebgp-customers
+#
+route-policy ebgp-export-to-cust-tcellnetwork permit node 70
+if-match community-filter ebgp-private-as-customers
+ #
+route-policy ebgp-export-to-cust-tcellnetwork permit node 80
+if-match as-path-filter 1
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default deny node 10
+if-match ip-prefix rfc1918
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default  deny node 20
+if-match ip-prefix rfc3330
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default  deny node 30
+if-match ip-prefix rfc6598
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default  deny node 40
+if-match ip-prefix pref-25to32
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default permit node 50
+if-match ip-prefix default
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default  permit node 60
+if-match community-filter ebgp-customers
+#
+route-policy ebgp-export-to-cust-tcellnetwork-no-default  permit node 70
+if-match community-filter ebgp-private-as-customers
+ #
+route-policy ebgp-export-to-cust-tcellnetwork-no-default permit node 80
+if-match as-path-filter 1
+ #
+route-policy ipv6-ebgp-export-to-cust-full-no-default deny node 10
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-ebgp-export-to-cust-full-no-default deny node 20
+if-match ipv6 address prefix-list ipv6-bogons
+#
+route-policy ipv6-ebgp-export-to-cust-full-no-default deny node 30
+if-match ipv6 address prefix-list pref-49to128
+#
+route-policy ipv6-ebgp-export-to-cust-full-no-default permit node 40
+if-match community-filter provider
+#
+route-policy ipv6-ebgp-export-to-cust-full-no-default permit node 50
+if-match community-filter all-peering
+#
+route-policy ipv6-ebgp-export-to-cust-full-no-default permit node 60
+if-match community-filter ebgp-customers
+ #
+route-policy ipv6-ebgp-export-to-cust-full-no-default permit node 70
+if-match community-filter ebgp-private-as-customers
+ #
+route-policy ipv6-ebgp-export-to-cust-full-no-default permit node 80
+if-match as-path-filter 1
+#
+route-policy ipv6-ebgp-export-to-cust-full permit node 5
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-ebgp-export-to-cust-full deny node 10
+if-match ipv6 address prefix-list ipv6-bogons
+#
+route-policy ipv6-ebgp-export-to-cust-full deny node 20
+if-match ipv6 address prefix-list pref-49to128
+#
+route-policy ipv6-ebgp-export-to-cust-full permit node 30
+if-match community-filter provider
+#
+route-policy ipv6-ebgp-export-to-cust-full permit node 40
+if-match community-filter all-peering
+#
+route-policy ipv6-ebgp-export-to-cust-full permit node 50
+if-match community-filter ebgp-customers
+#
+route-policy ipv6-ebgp-export-to-cust-full permit node 60
+if-match community-filter ebgp-private-as-customers
+ #
+route-policy ipv6-ebgp-export-to-cust-full permit node 70
+if-match as-path-filter 1
+#
+route-policy ipv6-ebgp-export-to-cust-default-only permit node 10
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork permit node 5
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork deny node 10
+if-match ipv6 address prefix-list ipv6-bogons
+#
+route-policy  ipv6-ebgp-export-to-cust-tcellnetwork deny node 20
+if-match ipv6 address prefix-list pref-49to128
+#
+route-policy  ipv6-ebgp-export-to-cust-tcellnetwork permit node 30
+if-match community-filter ebgp-customers
+#
+route-policy  ipv6-ebgp-export-to-cust-tcellnetwork permit node 40
+if-match community-filter ebgp-private-as-customers
+#
+route-policy  ipv6-ebgp-export-to-cust-tcellnetwork permit node 50
+if-match as-path-filter 1
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork-no-default deny node 10
+if-match ipv6 address prefix-list ipv6-bogons
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork-no-default deny node 20
+if-match ipv6 address prefix-list pref-49to128
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork-no-default permit node 30
+if-match community-filter ebgp-customers
+if-match community-filter ebgp-private-as-customers
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork-no-default permit node 40
+if-match as-path-filter 1
+#
+route-policy ipv6-ebgp-export-to-cust-tcellnetwork-no-default deny node 50
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy vpnv4-ebgp-export-to-cust-default-only permit node 10
+ if-match ip-prefix default
+ #
+route-policy vpnv4-ebgp-export-to-cust-full permit node 10
+ #
+route-policy vpnv4-ebgp-export-to-cust-full-no-default deny node 10
+ if-match ip-prefix default
+ #
+ route-policy vpnv4-ebgp-export-to-cust-full-no-default permit node 20
+#
+route-policy isis-admin-distance-policy permit node 10
+ if-match ip-prefix default
+ apply preference 215
+#
+route-policy ipv6-connected-into-bgp permit node 10
+if-match ipv6 address prefix-list pref-24to48
+#
+route-policy ipv6-connected-into-bgp permit node 20
+if-match ipv6 address prefix-list pref-49to128
+apply community no-export additive
+#
+route-policy ipv6-connected-into-bgp deny node 500
+#
+route-policy ipv6-static-into-bgp deny node 10
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-static-into-bgp deny node 20
+if-match tag 5
+#
+route-policy ipv6-static-into-bgp permit node 30
+if-match tag 6
+if-match ipv6 address prefix-list pref-24to48
+apply local-preference 50
+#
+route-policy ipv6-static-into-bgp permit node 40
+if-match tag 6
+if-match ipv6 address prefix-list pref-49to128
+apply community no-export additive
+apply local-preference 50
+#
+route-policy ipv6-static-into-bgp permit node 50
+if-match tag 10
+if-match ipv6 address prefix-list pref-24to48
+apply local-preference 250
+#
+route-policy ipv6-static-into-bgp permit node 60
+if-match tag 10
+if-match ipv6 address prefix-list pref-49to128
+apply local-preference 250
+apply community no-export additive
+#
+route-policy ipv6-static-into-bgp permit node 70
+if-match ipv6 address prefix-list pref-24to48
+#
+route-policy ipv6-static-into-bgp permit node 80
+if-match ipv6 address prefix-list pref-49to128
+apply community no-export additive
+#
+route-policy ipv6-static-into-bgp deny node 500
+#
+route-policy ipv6-ibgp-export-to-inet-rr deny node 10
+if-match ipv6 address prefix-list ipv6-default-route
+#
+route-policy ipv6-ibgp-export-to-inet-rr deny node 20
+ if-match ipv6 address prefix-list ipv6-bogons
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 30
+ if-match ipv6 address prefix-list pref-24to48
+ if-match as-path-filter 1
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 40
+ if-match ipv6 address prefix-list pref-24to48
+ if-match community-filter ebgp-customers
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 50
+ if-match ipv6 address prefix-list pref-24to48
+ if-match community-filter ebgp-private-as-customers
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 60
+ if-match ipv6 address prefix-list pref-49to128
+ if-match as-path-filter 1
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 70
+ if-match ipv6 address prefix-list pref-49to128
+ if-match community-filter ebgp-customers
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 80
+ if-match ipv6 address prefix-list pref-49to128
+ if-match community-filter ebgp-private-as-customers
+ apply community no-export 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 90
+ if-match community-filter peering-domestic-paid
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 100
+ if-match community-filter peering-domestic-private
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr permit node 110
+ if-match community-filter peering-domestic-public
+ apply community 65120:60000 {{UPE_HOST_SPECIFIC_BGP_COMMUNITY}} additive
+#
+route-policy ipv6-ibgp-export-to-inet-rr deny node 1000
+#
+#
+route-policy ipv6-ibgp-import-from-inet-rr permit node 10
+ if-match community-filter sol-bh666
+ apply ipv6 next-hop fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+route-policy ipv6-ibgp-import-from-inet-rr permit node 20
+ if-match community-filter sol-null0
+ apply ipv6 next-hop fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+route-policy ipv6-ibgp-import-from-inet-rr permit node 30
+ if-match community-filter yasaklilar
+ apply ipv6 next-hop fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+route-policy ipv6-ibgp-import-from-inet-rr permit node 100
+#
+route-policy ipv6-ibgp-import-from-inet-rr permit node 100
+ apply ipv6 next-hop ::FFFF:{{KPE_ANYCAST_LOOPBACK}}
+#
+tunnel-policy lsp-lb
+ tunnel select-seq lsp load-balance-number 32
+#
+tunnel-policy seamless
+ tunnel select-seq cr-lsp lsp load-balance-number 32 unmix
+#
+ip vpn-instance 2G3G-DATA-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:3896
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 2000 80
+  vpn-target 34984:3896 export-extcommunity
+  vpn-target 34984:3897 import-extcommunity
+#
+ip vpn-instance FTTB-GPON-MGMT-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:15076
+  vpn frr
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:15077 export-extcommunity
+  vpn-target 34984:15076 import-extcommunity
+#
+ip vpn-instance KURUMSAL-SW-MGMT-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:15078
+  vpn frr
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:15079 export-extcommunity
+  vpn-target 34984:15078 import-extcommunity
+#
+ip vpn-instance LTE-MGMT-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:1792
+  vpn frr
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:1792 export-extcommunity
+  vpn-target 34984:1793 import-extcommunity
+#
+ip vpn-instance LTE-S1-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:1790
+  vpn frr
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:1790 export-extcommunity
+  vpn-target 34984:1791 import-extcommunity
+#
+ip vpn-instance LTE-SYNC-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:1795
+  vpn frr
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:1795 export-extcommunity
+  vpn-target 34984:1796 import-extcommunity
+#
+ip vpn-instance LTE-X2-{{SEHIR_ADI}}
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:18{{'%02d' % PLAKA_KOD }}
+  export route-policy deny-default-and-permit-all
+  tnl-policy lsp-lb
+  apply-label per-route
+  transit-vpn
+  prefix limit 10000 80
+  vpn-target 34984:18{{'%02d' % PLAKA_KOD }} export-extcommunity
+  vpn-target 34984:18{{'%02d' % PLAKA_KOD }} import-extcommunity
+#
+ip vpn-instance TAN-MGMT-ACCESS
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:3282
+  tnl-policy lsp-lb
+  apply-label per-route
+  prefix limit 10000 80
+  vpn-target 34984:3283 export-extcommunity
+  vpn-target 34984:3282 import-extcommunity
+#
+ip dcn vpn-instance __dcn_vpn__
+ ipv4-family
+#
+ip vpn-instance democles
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:263
+  import route-policy management-888-import
+  tnl-policy lsp-lb
+  apply-label per-instance
+  prefix limit 5000 80
+  vpn-target 34984:263 export-extcommunity
+  vpn-target 34984:263 import-extcommunity
+#
+ip vpn-instance dummy-vpn-for-inline-rr
+ ipv4-family
+  route-distinguisher 255.255.255.255:255
+  import route-policy dummy-deny-all
+  tnl-policy lsp-lb
+  apply-label per-instance
+  vpn-target 34984:1790 import-extcommunity
+  vpn-target 34984:1792 import-extcommunity
+  vpn-target 34984:1795 import-extcommunity
+  vpn-target 34984:2860 import-extcommunity
+  vpn-target 34984:3131 import-extcommunity
+  vpn-target 34984:1178 import-extcommunity
+  vpn-target 34984:3274 import-extcommunity
+  vpn-target 34984:3896 import-extcommunity
+  vpn-target 34984:3282 import-extcommunity
+  vpn-target 34984:3283 import-extcommunity
+  vpn-target 34984:15069 import-extcommunity
+  vpn-target 34984:4068 import-extcommunity
+  vpn-target 34984:4103 import-extcommunity
+  vpn-target 34984:15076 import-extcommunity
+  vpn-target 34984:15077 import-extcommunity
+  vpn-target 34984:15078 import-extcommunity
+  vpn-target 34984:15079 import-extcommunity
+#
+ip vpn-instance fullmesh-monitoring
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:3945
+  tnl-policy lsp-lb
+  apply-label per-instance
+  prefix limit 5000 80
+  vpn-target 34984:3945 export-extcommunity
+  vpn-target 34984:3945 import-extcommunity
+#
+ip vpn-instance solmonitoring
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:1178
+  import route-policy management-888-import
+  tnl-policy lsp-lb
+  apply-label per-instance
+  prefix limit 5000 80
+  vpn-target 34984:1178 export-extcommunity
+  vpn-target 34984:4103 export-extcommunity
+  vpn-target 34984:1178 import-extcommunity
+  vpn-target 34984:888 import-extcommunity
+  vpn-target 34984:4068 import-extcommunity
+#
+ip vpn-instance wifi_ap
+ ipv4-family
+  route-distinguisher {{LOOPBACK0_IP_ADDRESS}}:1671
+  tnl-policy lsp-lb
+  apply-label per-instance
+  prefix limit 10000 80
+  vpn-target 34984:1671 export-extcommunity
+  vpn-target 34984:1670 import-extcommunity
+#
+interface LoopBack1
+description fullmesh-monitoring-twamp-interface
+ip binding vpn-instance fullmesh-monitoring
+ip address {{LOOPBACK1_Ozel_IP_ADDRESS}}  255.255.255.255
+#
+interface LoopBack7
+ description MANAGEMENT
+ ip binding vpn-instance TAN-MGMT-ACCESS
+ ip address {{LOOPBACK7_IP_ADDRESS}} 255.255.255.255
+#
+segment-routing
+traffic-statistics enable host
+#
+isis 1
+description Backbone
+is-level level-2
+cost-style wide
+network-entity {{ISIS1_NSAP_ADDRESS}}
+is-name {{HOSTNAME}}
+segment-routing mpls
+segment-routing global-block 24000 89354
+avoid-microloop segment-routing
+#
+mpls ldp
+ graceful-restart
+ #
+ ipv4-family
+#
+isis 1 
+ timer lsp-generation 1 50 50 level-2
+ circuit-cost 100000
+ mpls ldp auto-config 
+ avoid-microloop te-tunnel
+ avoid-microloop te-tunnel rib-update-delay 5000 
+ flash-flood 15 level-2
+ preference 115 route-policy isis-admin-distance-policy
+ timer spf 1 50 50
+ traffic-eng level-2
+ local-mt enable
+ timer lsp-max-age 65535
+ timer lsp-refresh 65000
+ set-overload on-startup 300
+ prefix-priority level-2 critical ip-prefix isis-rib-critical
+ prefix-priority level-2 high ip-prefix isis-rib-high
+#
+pim
+ ssm-policy acl-name iptv-channel-groups
+#
+interface LoopBack0
+ ip address {{LOOPBACK0_IP_ADDRESS}} 255.255.255.255
+ pim sm
+ isis enable 1
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.43.0.179
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.43.0.179
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.43.0.182
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.43.0.182
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.6.4
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.6.4
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.6.7
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.6.7
+igmp static-group 233.21.46.0 inc-step-mask 0.0.0.1 number 16 source 176.235.15.4
+igmp static-group 233.21.46.16 inc-step-mask 0.0.0.1 number 7 source 176.235.15.212
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.68
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.69
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.70
+igmp static-group 233.26.166.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.71
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.68
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.69
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.70
+igmp static-group 233.88.168.0 inc-step-mask 0.0.0.1 number 255 source 176.235.12.71
+#
+sysname {{HOSTNAME}}
+#
+command-privilege level rearrange
+#
+undo ftp server
+sftp server enable
+sftp server default-directory cfcard:
+sftp client-source -i LoopBack7
+#
+info-center filter-id bymodule-alias snmp AUTHENTICATIONFAILURE
+info-center source default channel 2 log level debugging trap state off
+info-center loghost source LoopBack7
+info-center loghost 10.222.246.12  vpn-instance TAN-MGMT-ACCESS
+info-center loghost 10.222.246.13  vpn-instance TAN-MGMT-ACCESS
+info-center loghost 10.222.247.248  vpn-instance TAN-MGMT-ACCESS
+info-center timestamp log format-date precision-time millisecond
+#
+set memory-usage threshold 75 restore 72 slot 15
+set memory-usage threshold 75 restore 72 slot 16
+#
+router id {{LOOPBACK0_IP_ADDRESS}}
+#
+stp instance 0 root primary
+stp enable
+#
+multicast routing-enable
+multicast load-splitting source-group
+#
+multicast cpu-forward disable
+#
+multicastbandwidth
+#
+undo user-security-policy enable
+#
+service-template qos-count-header-length
+ network-header-length 42 inbound
+ network-header-length 42 outbound
+#
+ip netstream timeout active 1
+ip netstream timeout inactive 5
+ip netstream tcp-flag enable
+ip netstream mpls-aware label-and-ip
+ip netstream export version 9
+ip netstream export template timeout-rate 1
+ip netstream sampler fix-packets 5000 inbound
+ip netstream sampler fix-packets 5000 outbound
+ip netstream export source {{LOOPBACK0_IP_ADDRESS}}
+ip netstream export host 10.219.138.9 9996
+#
+lacp e-trunk system-id 0001-0001-0001
+lacp e-trunk priority 1
+#
+set flow-stat interval 30
+#
+set save-configuration interval 180
+#
+telnet server enable
+telnet server-source -i LoopBack0
+#
+undo dcn
+#
+clock timezone GMT add 03:00:00
+#
+snmp-agent trap type entity-trap
+#
+ single-nexthop bgp fast-refresh enable
+#
+ ip netstream timeout active 1
+ ip netstream timeout inactive 5
+ ip netstream tcp-flag enable
+ ip netstream mpls-aware label-and-ip
+#
+diffserv domain default
+diffserv domain solqos
+ ip-dscp-inbound 9 phb af1 green
+ ip-dscp-inbound 11 phb af1 green
+ ip-dscp-inbound 13 phb af1 green
+ ip-dscp-inbound 15 phb af1 green
+ ip-dscp-inbound 17 phb af2 green
+ ip-dscp-inbound 19 phb af2 green
+ ip-dscp-inbound 21 phb af2 green
+ ip-dscp-inbound 23 phb af2 green
+ ip-dscp-inbound 25 phb af3 green
+ ip-dscp-inbound 27 phb af3 green
+ ip-dscp-inbound 29 phb af3 green
+ ip-dscp-inbound 31 phb af3 green
+ ip-dscp-inbound 33 phb af4 green
+ ip-dscp-inbound 35 phb af4 green
+ ip-dscp-inbound 37 phb af4 green
+ ip-dscp-inbound 39 phb af4 green
+ ip-dscp-inbound 41 phb ef green
+ ip-dscp-inbound 42 phb ef green
+ ip-dscp-inbound 43 phb ef green
+ ip-dscp-inbound 44 phb ef green
+ ip-dscp-inbound 45 phb ef green
+ ip-dscp-inbound 47 phb ef green
+ ip-dscp-inbound 49 phb cs6 green
+ ip-dscp-inbound 50 phb cs6 green
+ ip-dscp-inbound 51 phb cs6 green
+ ip-dscp-inbound 52 phb cs6 green
+ ip-dscp-inbound 53 phb cs6 green
+ ip-dscp-inbound 54 phb cs6 green
+ ip-dscp-inbound 55 phb cs6 green
+ ip-dscp-inbound 57 phb cs7 green
+ ip-dscp-inbound 58 phb cs7 green
+ ip-dscp-inbound 59 phb cs7 green
+ ip-dscp-inbound 60 phb cs7 green
+ ip-dscp-inbound 61 phb cs7 green
+ ip-dscp-inbound 62 phb cs7 green
+ ip-dscp-inbound 63 phb cs7 green
+diffserv domain 5p3dbas
+diffserv domain 5p3d
+#
+flow-queue LTE-S1-ACCESS
+ queue be lpq
+ queue af1 wfq weight 10
+ queue af2 wfq weight 15
+ queue af3 wfq weight 30
+ queue af4 wfq weight 20
+ queue ef pq shaping shaping-percentage 25 low-latency
+ queue cs6 pq shaping shaping-percentage 5
+ queue cs7 pq shaping shaping-percentage 5
+#
+flow-queue LTE-MGMT-ACCESS
+ queue be lpq
+ queue af1 wfq weight 10
+ queue af2 wfq weight 15
+ queue af3 wfq weight 30
+ queue af4 wfq weight 20
+ queue ef pq shaping shaping-percentage 25 low-latency
+ queue cs6 pq shaping shaping-percentage 5
+ queue cs7 pq shaping shaping-percentage 5
+#
+flow-queue LTE-SYNC-ACCESS
+ queue be lpq
+ queue af1 wfq weight 10
+ queue af2 wfq weight 15
+ queue af3 wfq weight 30
+ queue af4 wfq weight 20
+ queue ef pq shaping shaping-percentage 25 low-latency
+ queue cs6 pq shaping shaping-percentage 5
+ queue cs7 pq shaping shaping-percentage 5
+#
+flow-queue LTE-X2
+ queue be lpq
+ queue af1 wfq weight 10
+ queue af2 wfq weight 15
+ queue af3 wfq weight 30
+ queue af4 wfq weight 20
+ queue ef pq shaping shaping-percentage 25 low-latency
+ queue cs6 pq shaping shaping-percentage 5
+ queue cs7 pq shaping shaping-percentage 5
+#
+flow-queue FIBER-SITE-2G-3G
+ queue be lpq
+ queue af1 wfq weight 10
+ queue af2 wfq weight 15
+ queue af3 wfq weight 30
+ queue af4 wfq weight 20
+ queue ef pq shaping shaping-percentage 25 low-latency
+ queue cs6 pq shaping shaping-percentage 5
+ queue cs7 pq shaping shaping-percentage 5
+#
+service-template template-default0
+service-template template-default1
+service-template template-default2
+service-template template-default3
+service-template template-default4
+#
+qos-profile 50M-FIBER-SITE-2G-3G
+ user-queue cir 50000 cbs 1250000 pir 50000 pbs 2500000 inbound
+ user-queue cir 50000 cbs 1250000 pir 50000 pbs 2500000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 100M-FIBER-SITE-2G-3G
+ user-queue cir 100000 cbs 2500000 pir 100000 pbs 4000000 inbound
+ user-queue cir 100000 cbs 2500000 pir 100000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 150M-FIBER-SITE-2G-3G
+ user-queue cir 150000 cbs 3750000 pir 150000 pbs 4000000 inbound
+ user-queue cir 150000 cbs 3750000 pir 150000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 200M-FIBER-SITE-2G-3G
+ user-queue cir 200000 cbs 4000000 pir 200000 pbs 4000000 inbound
+ user-queue cir 200000 cbs 4000000 pir 200000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 250M-FIBER-SITE-2G-3G
+ user-queue cir 250000 cbs 4000000 pir 250000 pbs 4000000 inbound
+ user-queue cir 250000 cbs 4000000 pir 250000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 300M-FIBER-SITE-2G-3G
+ user-queue cir 300000 cbs 4000000 pir 300000 pbs 4000000 inbound
+ user-queue cir 300000 cbs 4000000 pir 300000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 350M-FIBER-SITE-2G-3G
+ user-queue cir 350000 cbs 4000000 pir 350000 pbs 4000000 inbound
+ user-queue cir 350000 cbs 4000000 pir 350000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 400M-LTE-S1-ACCESS
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 450M-LTE-S1-ACCESS
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 500M-LTE-S1-ACCESS
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 600M-LTE-S1-ACCESS
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 700M-LTE-S1-ACCESS
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 800M-LTE-S1-ACCESS
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 900M-LTE-S1-ACCESS
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 1G-LTE-S1-ACCESS
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 flow-queue LTE-S1-ACCESS outbound
+#
+qos-profile 400M-LTE-MGMT-ACCESS
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 450M-LTE-MGMT-ACCESS
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 500M-LTE-MGMT-ACCESS
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 600M-LTE-MGMT-ACCESS
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 700M-LTE-MGMT-ACCESS
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 800M-LTE-MGMT-ACCESS
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 900M-LTE-MGMT-ACCESS
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 1G-LTE-MGMT-ACCESS
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 flow-queue LTE-MGMT-ACCESS outbound
+#
+qos-profile 400M-LTE-SYNC-ACCESS
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 450M-LTE-SYNC-ACCESS
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 500M-LTE-SYNC-ACCESS
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 600M-LTE-SYNC-ACCESS
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 700M-LTE-SYNC-ACCESS
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 800M-LTE-SYNC-ACCESS
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 900M-LTE-SYNC-ACCESS
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 1G-LTE-SYNC-ACCESS
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 flow-queue LTE-SYNC-ACCESS outbound
+#
+qos-profile 400M-LTE-X2
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 450M-LTE-X2
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 500M-LTE-X2
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 600M-LTE-X2
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 700M-LTE-X2
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 800M-LTE-X2
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 900M-LTE-X2
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 1G-LTE-X2
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 flow-queue LTE-X2 outbound
+#
+qos-profile 400M-FIBER-SITE-2G-3G
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 450M-FIBER-SITE-2G-3G
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 500M-FIBER-SITE-2G-3G
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 600M-FIBER-SITE-2G-3G
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 700M-FIBER-SITE-2G-3G
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 800M-FIBER-SITE-2G-3G
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 900M-FIBER-SITE-2G-3G
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 1G-FIBER-SITE-2G-3G
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 flow-queue FIBER-SITE-2G-3G outbound
+#
+qos-profile 250M
+ user-queue cir 250000 cbs 4000000 pir 250000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 250000 cbs 4000000 pir 250000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 300M
+ user-queue cir 300000 cbs 4000000 pir 300000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 300000 cbs 4000000 pir 300000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 45M
+ user-queue cir 45000 cbs 1125000 pir 45000 pbs 2250000 inbound service-template qos-count-header-length
+ user-queue cir 45000 cbs 1125000 pir 45000 pbs 2250000 outbound service-template qos-count-header-length
+qos-profile 1.1G
+ user-queue cir 1100000 cbs 4000000 pir 1100000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1100000 cbs 4000000 pir 1100000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1.25G
+ user-queue cir 1250000 cbs 4000000 pir 1250000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1250000 cbs 4000000 pir 1250000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1.5G
+ user-queue cir 1500000 cbs 4000000 pir 1500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1500000 cbs 4000000 pir 1500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1.6G
+ user-queue cir 1600000 cbs 4000000 pir 1600000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1600000 cbs 4000000 pir 1600000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1.75G
+ user-queue cir 1750000 cbs 4000000 pir 1750000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1750000 cbs 4000000 pir 1750000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 2G
+ user-queue cir 2000000 cbs 4000000 pir 2000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 2000000 cbs 4000000 pir 2000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 2M
+ user-queue cir 2000 cbs 50000 pir 2000 pbs 100000 inbound service-template qos-count-header-length
+ user-queue cir 2000 cbs 50000 pir 2000 pbs 100000 outbound service-template qos-count-header-length
+qos-profile 17M
+ user-queue cir 17000 cbs 425000 pir 17000 pbs 850000 inbound service-template qos-count-header-length
+ user-queue cir 17000 cbs 425000 pir 17000 pbs 850000 outbound service-template qos-count-header-length
+qos-profile 200M
+ user-queue cir 200000 cbs 4000000 pir 200000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 200000 cbs 4000000 pir 200000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 350M
+ user-queue cir 350000 cbs 4000000 pir 350000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 350000 cbs 4000000 pir 350000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 3M
+ user-queue cir 3000 cbs 75000 pir 3000 pbs 150000 inbound service-template qos-count-header-length
+ user-queue cir 3000 cbs 75000 pir 3000 pbs 150000 outbound service-template qos-count-header-length
+qos-profile 3G
+ user-queue cir 3000000 cbs 4000000 pir 3000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 3000000 cbs 4000000 pir 3000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 35M
+ user-queue cir 35000 cbs 875000 pir 35000 pbs 1750000 inbound service-template qos-count-header-length
+ user-queue cir 35000 cbs 875000 pir 35000 pbs 1750000 outbound service-template qos-count-header-length
+qos-profile 25M
+ user-queue cir 25000 cbs 625000 pir 25000 pbs 1250000 inbound service-template qos-count-header-length
+ user-queue cir 25000 cbs 625000 pir 25000 pbs 1250000 outbound service-template qos-count-header-length
+qos-profile 800M
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 800000 cbs 4000000 pir 800000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 4M
+ user-queue cir 4000 cbs 100000 pir 4000 pbs 200000 inbound service-template qos-count-header-length
+ user-queue cir 4000 cbs 100000 pir 4000 pbs 200000 outbound service-template qos-count-header-length
+qos-profile 4G
+ user-queue cir 4000000 cbs 4000000 pir 4000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 4000000 cbs 4000000 pir 4000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 16M
+ user-queue cir 16000 cbs 400000 pir 16000 pbs 800000 inbound service-template qos-count-header-length
+ user-queue cir 16000 cbs 400000 pir 16000 pbs 800000 outbound service-template qos-count-header-length
+qos-profile 700M
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 700000 cbs 4000000 pir 700000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 512K
+ user-queue cir 512 cbs 12800 pir 512 pbs 25600 inbound service-template qos-count-header-length
+ user-queue cir 512 cbs 12800 pir 512 pbs 25600 outbound service-template qos-count-header-length
+qos-profile 5M
+ user-queue cir 5000 cbs 125000 pir 5000 pbs 250000 inbound service-template qos-count-header-length
+ user-queue cir 5000 cbs 125000 pir 5000 pbs 250000 outbound service-template qos-count-header-length
+qos-profile 5G
+ user-queue cir 5000000 cbs 4000000 pir 5000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 5000000 cbs 4000000 pir 5000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 15M
+ user-queue cir 15000 cbs 375000 pir 15000 pbs 750000 inbound service-template qos-count-header-length
+ user-queue cir 15000 cbs 375000 pir 15000 pbs 750000 outbound service-template qos-count-header-length
+qos-profile 600M
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 600000 cbs 4000000 pir 600000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 40M
+ user-queue cir 40000 cbs 1000000 pir 40000 pbs 2000000 inbound service-template qos-count-header-length
+ user-queue cir 40000 cbs 1000000 pir 40000 pbs 2000000 outbound service-template qos-count-header-length
+qos-profile 80M
+ user-queue cir 80000 cbs 2000000 pir 80000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 80000 cbs 2000000 pir 80000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 60M
+ user-queue cir 60000 cbs 1500000 pir 60000 pbs 3000000 inbound service-template qos-count-header-length
+ user-queue cir 60000 cbs 1500000 pir 60000 pbs 3000000 outbound service-template qos-count-header-length
+qos-profile 14M
+ user-queue cir 14000 cbs 350000 pir 14000 pbs 700000 inbound service-template qos-count-header-length
+ user-queue cir 14000 cbs 350000 pir 14000 pbs 700000 outbound service-template qos-count-header-length
+qos-profile 450M
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 450000 cbs 4000000 pir 450000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 6G
+ user-queue cir 6000000 cbs 4000000 pir 6000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 6000000 cbs 4000000 pir 6000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 100M
+ user-queue cir 100000 cbs 2500000 pir 100000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 100000 cbs 2500000 pir 100000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 6M
+ user-queue cir 6000 cbs 150000 pir 6000 pbs 300000 inbound service-template qos-count-header-length
+ user-queue cir 6000 cbs 150000 pir 6000 pbs 300000 outbound service-template qos-count-header-length
+qos-profile 768K
+ user-queue cir 768 cbs 19200 pir 768 pbs 38400 inbound service-template qos-count-header-length
+ user-queue cir 768 cbs 19200 pir 768 pbs 38400 outbound service-template qos-count-header-length
+qos-profile 20M
+ user-queue cir 20000 cbs 500000 pir 20000 pbs 1000000 inbound service-template qos-count-header-length
+ user-queue cir 20000 cbs 500000 pir 20000 pbs 1000000 outbound service-template qos-count-header-length
+qos-profile 7G
+ user-queue cir 7000000 cbs 4000000 pir 7000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 7000000 cbs 4000000 pir 7000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 7M
+ user-queue cir 7000 cbs 175000 pir 7000 pbs 350000 inbound service-template qos-count-header-length
+ user-queue cir 7000 cbs 175000 pir 7000 pbs 350000 outbound service-template qos-count-header-length
+qos-profile 175M
+ user-queue cir 175000 cbs 4000000 pir 175000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 175000 cbs 4000000 pir 175000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 256K
+ user-queue cir 256 cbs 6400 pir 256 pbs 12800 inbound service-template qos-count-header-length
+ user-queue cir 256 cbs 6400 pir 256 pbs 12800 outbound service-template qos-count-header-length
+qos-profile 8M
+ user-queue cir 8000 cbs 200000 pir 8000 pbs 400000 inbound service-template qos-count-header-length
+ user-queue cir 8000 cbs 200000 pir 8000 pbs 400000 outbound service-template qos-count-header-length
+qos-profile 8G
+ user-queue cir 8000000 cbs 4000000 pir 8000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 8000000 cbs 4000000 pir 8000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 2.5G
+ user-queue cir 2500000 cbs 4000000 pir 2500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 2500000 cbs 4000000 pir 2500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 19M
+ user-queue cir 19000 cbs 475000 pir 19000 pbs 950000 inbound service-template qos-count-header-length
+ user-queue cir 19000 cbs 475000 pir 19000 pbs 950000 outbound service-template qos-count-header-length
+qos-profile 13M
+ user-queue cir 13000 cbs 325000 pir 13000 pbs 650000 inbound service-template qos-count-header-length
+ user-queue cir 13000 cbs 325000 pir 13000 pbs 650000 outbound service-template qos-count-header-length
+qos-profile 9M
+ user-queue cir 9000 cbs 225000 pir 9000 pbs 450000 inbound service-template qos-count-header-length
+ user-queue cir 9000 cbs 225000 pir 9000 pbs 450000 outbound service-template qos-count-header-length
+qos-profile 125M
+ user-queue cir 125000 cbs 3125000 pir 125000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 125000 cbs 3125000 pir 125000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 9G
+ user-queue cir 9000000 cbs 4000000 pir 9000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 9000000 cbs 4000000 pir 9000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 12M
+ user-queue cir 12000 cbs 300000 pir 12000 pbs 600000 inbound service-template qos-count-header-length
+ user-queue cir 12000 cbs 300000 pir 12000 pbs 600000 outbound service-template qos-count-header-length
+qos-profile 18M
+ user-queue cir 18000 cbs 450000 pir 18000 pbs 900000 inbound service-template qos-count-header-length
+ user-queue cir 18000 cbs 450000 pir 18000 pbs 900000 outbound service-template qos-count-header-length
+qos-profile 30M
+ user-queue cir 30000 cbs 750000 pir 30000 pbs 1500000 inbound service-template qos-count-header-length
+ user-queue cir 30000 cbs 750000 pir 30000 pbs 1500000 outbound service-template qos-count-header-length
+qos-profile 50M
+ user-queue cir 50000 cbs 1250000 pir 50000 pbs 2500000 inbound service-template qos-count-header-length
+ user-queue cir 50000 cbs 1250000 pir 50000 pbs 2500000 outbound service-template qos-count-header-length
+qos-profile 90M
+ user-queue cir 90000 cbs 2250000 pir 90000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 90000 cbs 2250000 pir 90000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 500M
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 500000 cbs 4000000 pir 500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 11M
+ user-queue cir 11000 cbs 275000 pir 11000 pbs 550000 inbound service-template qos-count-header-length
+ user-queue cir 11000 cbs 275000 pir 11000 pbs 550000 outbound service-template qos-count-header-length
+qos-profile 70M
+ user-queue cir 70000 cbs 1750000 pir 70000 pbs 3500000 inbound service-template qos-count-header-length
+ user-queue cir 70000 cbs 1750000 pir 70000 pbs 3500000 outbound service-template qos-count-header-length
+qos-profile 900M
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 900000 cbs 4000000 pir 900000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1G
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 1000000 cbs 4000000 pir 1000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 1M
+ user-queue cir 1000 cbs 25000 pir 1000 pbs 50000 inbound service-template qos-count-header-length
+ user-queue cir 1000 cbs 25000 pir 1000 pbs 50000 outbound service-template qos-count-header-length
+qos-profile 400M
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 400000 cbs 4000000 pir 400000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 150M
+ user-queue cir 150000 cbs 3750000 pir 150000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 150000 cbs 3750000 pir 150000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 10M
+ user-queue cir 10000 cbs 250000 pir 10000 pbs 500000 inbound service-template qos-count-header-length
+ user-queue cir 10000 cbs 250000 pir 10000 pbs 500000 outbound service-template qos-count-header-length
+qos-profile 10G
+ user-queue cir 10000000 cbs 4000000 pir 10000000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 10000000 cbs 4000000 pir 10000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 11G
+user-queue cir 11000000 cbs 4000000 pir 11000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 11000000 cbs 4000000 pir 11000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 12G
+user-queue cir 12000000 cbs 4000000 pir 12000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 12000000 cbs 4000000 pir 12000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 13G
+user-queue cir 13000000 cbs 4000000 pir 13000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 13000000 cbs 4000000 pir 13000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 14G
+user-queue cir 14000000 cbs 4000000 pir 14000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 14000000 cbs 4000000 pir 14000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 15G
+user-queue cir 15000000 cbs 4000000 pir 15000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 15000000 cbs 4000000 pir 15000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 16G
+user-queue cir 16000000 cbs 4000000 pir 16000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 16000000 cbs 4000000 pir 16000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 17G
+user-queue cir 17000000 cbs 4000000 pir 17000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 17000000 cbs 4000000 pir 17000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 18G
+user-queue cir 18000000 cbs 4000000 pir 18000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 18000000 cbs 4000000 pir 18000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 19G
+user-queue cir 19000000 cbs 4000000 pir 19000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 19000000 cbs 4000000 pir 19000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 20G
+user-queue cir 20000000 cbs 4000000 pir 20000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 20000000 cbs 4000000 pir 20000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 21G
+user-queue cir 21000000 cbs 4000000 pir 21000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 21000000 cbs 4000000 pir 21000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 22G
+user-queue cir 22000000 cbs 4000000 pir 22000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 22000000 cbs 4000000 pir 22000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 23G
+user-queue cir 23000000 cbs 4000000 pir 23000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 23000000 cbs 4000000 pir 23000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 24G
+user-queue cir 24000000 cbs 4000000 pir 24000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 24000000 cbs 4000000 pir 24000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 25G
+user-queue cir 25000000 cbs 4000000 pir 25000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 25000000 cbs 4000000 pir 25000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 26G
+user-queue cir 26000000 cbs 4000000 pir 26000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 26000000 cbs 4000000 pir 26000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 27G
+user-queue cir 27000000 cbs 4000000 pir 27000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 27000000 cbs 4000000 pir 27000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 28G
+user-queue cir 28000000 cbs 4000000 pir 28000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 28000000 cbs 4000000 pir 28000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 29G
+user-queue cir 29000000 cbs 4000000 pir 29000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 29000000 cbs 4000000 pir 29000000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 30G
+user-queue cir 30000000 cbs 4000000 pir 30000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 30000000 cbs 4000000 pir 30000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 3.5G
+ user-queue cir 3500000 cbs 4000000 pir 3500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 3500000 cbs 4000000 pir 3500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 4.5G
+ user-queue cir 4500000 cbs 4000000 pir 4500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 4500000 cbs 4000000 pir 4500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 5.5G
+ user-queue cir 5500000 cbs 4000000 pir 5500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 5500000 cbs 4000000 pir 5500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 6.5G
+ user-queue cir 6500000 cbs 4000000 pir 6500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 6500000 cbs 4000000 pir 6500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 7.5G
+ user-queue cir 7500000 cbs 4000000 pir 7500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 7500000 cbs 4000000 pir 7500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 8.5G
+ user-queue cir 8500000 cbs 4000000 pir 8500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 8500000 cbs 4000000 pir 8500000 pbs 4000000 outbound service-template qos-count-header-length
+qos-profile 9.5G
+ user-queue cir 9500000 cbs 4000000 pir 9500000 pbs 4000000 inbound service-template qos-count-header-length
+ user-queue cir 9500000 cbs 4000000 pir 9500000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 31G
+user-queue cir 31000000 cbs 4000000 pir 31000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 31000000 cbs 4000000 pir 31000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 32G
+user-queue cir 32000000 cbs 4000000 pir 32000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 32000000 cbs 4000000 pir 32000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 33G
+user-queue cir 33000000 cbs 4000000 pir 33000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 33000000 cbs 4000000 pir 33000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 34G
+user-queue cir 34000000 cbs 4000000 pir 34000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 34000000 cbs 4000000 pir 34000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 35G
+user-queue cir 35000000 cbs 4000000 pir 35000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 35000000 cbs 4000000 pir 35000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 36G
+user-queue cir 36000000 cbs 4000000 pir 36000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 36000000 cbs 4000000 pir 36000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 37G
+user-queue cir 37000000 cbs 4000000 pir 37000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 37000000 cbs 4000000 pir 37000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 38G
+user-queue cir 38000000 cbs 4000000 pir 38000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 38000000 cbs 4000000 pir 38000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 39G
+user-queue cir 39000000 cbs 4000000 pir 39000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 39000000 cbs 4000000 pir 39000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 40G
+user-queue cir 40000000 cbs 4000000 pir 40000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 40000000 cbs 4000000 pir 40000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 42G
+user-queue cir 42000000 cbs 4000000 pir 42000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 42000000 cbs 4000000 pir 42000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 44G
+user-queue cir 44000000 cbs 4000000 pir 44000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 44000000 cbs 4000000 pir 44000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 46G
+user-queue cir 46000000 cbs 4000000 pir 46000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 46000000 cbs 4000000 pir 46000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 48G
+user-queue cir 48000000 cbs 4000000 pir 48000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 48000000 cbs 4000000 pir 48000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 50G
+user-queue cir 50000000 cbs 4000000 pir 50000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 50000000 cbs 4000000 pir 50000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 52G
+user-queue cir 52000000 cbs 4000000 pir 52000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 52000000 cbs 4000000 pir 52000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 54G
+user-queue cir 54000000 cbs 4000000 pir 54000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 54000000 cbs 4000000 pir 54000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 56G
+user-queue cir 56000000 cbs 4000000 pir 56000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 56000000 cbs 4000000 pir 56000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 58G
+user-queue cir 58000000 cbs 4000000 pir 58000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 58000000 cbs 4000000 pir 58000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 60G
+user-queue cir 60000000 cbs 4000000 pir 60000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 60000000 cbs 4000000 pir 60000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 62G
+user-queue cir 62000000 cbs 4000000 pir 62000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 62000000 cbs 4000000 pir 62000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 64G
+user-queue cir 64000000 cbs 4000000 pir 64000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 64000000 cbs 4000000 pir 64000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 66G
+user-queue cir 66000000 cbs 4000000 pir 66000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 66000000 cbs 4000000 pir 66000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 68G
+user-queue cir 68000000 cbs 4000000 pir 68000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 68000000 cbs 4000000 pir 68000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 70G
+user-queue cir 70000000 cbs 4000000 pir 70000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 70000000 cbs 4000000 pir 70000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 75G
+user-queue cir 75000000 cbs 4000000 pir 75000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 75000000 cbs 4000000 pir 75000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 80G
+user-queue cir 80000000 cbs 4000000 pir 80000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 80000000 cbs 4000000 pir 80000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 85G
+user-queue cir 85000000 cbs 4000000 pir 85000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 85000000 cbs 4000000 pir 85000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 90G
+user-queue cir 90000000 cbs 4000000 pir 90000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 90000000 cbs 4000000 pir 90000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 95G
+user-queue cir 95000000 cbs 4000000 pir 95000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 95000000 cbs 4000000 pir 95000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+qos-profile 100G
+user-queue cir 100000000 cbs 4000000 pir 100000000 pbs 4000000 inbound service-template qos-count-header-length
+user-queue cir 100000000 cbs 4000000 pir 100000000 pbs 4000000 outbound service-template qos-count-header-length
+#
+hwtacacs enable
+hwtacacs-server template tacacs
+ hwtacacs-server authentication 10.222.247.240 vpn-instance TAN-MGMT-ACCESS
+ hwtacacs-server authentication 10.220.63.240 vpn-instance TAN-MGMT-ACCESS secondary
+ hwtacacs-server authorization 10.222.247.240 vpn-instance TAN-MGMT-ACCESS
+ hwtacacs-server authorization 10.220.63.240 vpn-instance TAN-MGMT-ACCESS secondary
+ hwtacacs-server accounting 10.222.247.240 vpn-instance TAN-MGMT-ACCESS
+ hwtacacs-server accounting 10.220.63.240 vpn-instance TAN-MGMT-ACCESS secondary
+ hwtacacs-server source-ip {{LOOPBACK7_IP_ADDRESS}}
+ hwtacacs-server shared-key cipher Eegf2024i
+ hwtacacs-server user-name original
+#
+bfd
+ delay-up 5
+#
+mpls lsr-id {{LOOPBACK0_IP_ADDRESS}}
+mpls
+ ftn delay 10
+ mpls te auto-frr
+ mpls te auto-frr reoptimization frequency 120
+ mpls rsvp-te hello
+ mpls path-mtu independent
+ label advertise explicit-null
+ mpls te
+ mpls te srlg path-calculation preferred
+ mpls rsvp-te
+ mpls te cspf
+ mpls te cspf preferred-igp isis
+ mpls te switch-delay 30000 delete-delay 60000
+#
+mpls l2vpn
+#
+mpls ldp remote-peer {{NPE1_LOOPBACK_IP}}
+ remote-ip {{NPE1_LOOPBACK_IP}}
+#
+mpls ldp remote-peer {{NPE2_LOOPBACK_IP}}
+ remote-ip {{NPE2_LOOPBACK_IP}}
+#
+acl number 2024
+ description fullmesh-monitoring-twamp-probs
+ rule 5 permit vpn-instance fullmesh-monitoring source 10.40.156.0 0.0.3.255
+ rule 10 permit vpn-instance fullmesh-monitoring source 10.40.160.0 0.0.3.255
+#
+nqa twamp
+ server
+  tcp port 862 vpn-instance fullmesh-monitoring
+  control-session inactive 600
+  client acl 2024
+  reflector
+  test-session inactive 600
+#
+aaa
+ user-password min-len 9
+ local-user tellcom password irreversible-cipher $1c$j$"b*5o$sW$EQ,:G\B#s&]ge$YOQE:VDsBn4}&}jMJurGL'WDn'$
+ local-user tellcom service-type terminal ftp ssh
+ local-user tellcom level 15
+ local-user tellcom state block fail-times 10 interval 1
+ local-user tellcom ftp-directory cfcard:
+ undo local-user root
+ undo local-user admin
+ undo local-user huawei
+ #
+ authentication-scheme default0
+ #
+ authentication-scheme default1
+ #
+ authentication-scheme default
+  authentication-mode hwtacacs local
+ #
+ authorization-scheme default
+  authorization-mode hwtacacs local
+  authorization-cmd 0 hwtacacs local
+  authorization-cmd 1 hwtacacs local
+  authorization-cmd 2 hwtacacs local
+  authorization-cmd 3 hwtacacs local
+  authorization-cmd 4 hwtacacs local
+  authorization-cmd 5 hwtacacs local
+  authorization-cmd 6 hwtacacs local
+  authorization-cmd 7 hwtacacs local
+  authorization-cmd 8 hwtacacs local
+  authorization-cmd 9 hwtacacs local
+  authorization-cmd 10 hwtacacs local
+  authorization-cmd 11 hwtacacs local
+  authorization-cmd 12 hwtacacs local
+  authorization-cmd 13 hwtacacs local
+  authorization-cmd 14 hwtacacs local
+  authorization-cmd 15 hwtacacs local
+ #
+ authorization-scheme tacacs
+  authorization-mode hwtacacs local
+  authorization-cmd 0 hwtacacs local
+  authorization-cmd 1 hwtacacs local
+  authorization-cmd 2 hwtacacs local
+  authorization-cmd 3 hwtacacs local
+  authorization-cmd 4 hwtacacs local
+  authorization-cmd 5 hwtacacs local
+  authorization-cmd 6 hwtacacs local
+  authorization-cmd 7 hwtacacs local
+  authorization-cmd 8 hwtacacs local
+  authorization-cmd 9 hwtacacs local
+  authorization-cmd 10 hwtacacs local
+  authorization-cmd 11 hwtacacs local
+  authorization-cmd 12 hwtacacs local
+  authorization-cmd 13 hwtacacs local
+  authorization-cmd 14 hwtacacs local
+  authorization-cmd 15 hwtacacs local
+ #
+ accounting-scheme default0
+ #
+ accounting-scheme default1
+ #
+ accounting-scheme default
+  accounting-mode hwtacacs
+  accounting start-fail online
+ #
+ domain default0
+ #
+ domain default1
+ #
+ domain default_admin
+  authorization-scheme tacacs
+  hwtacacs-server tacacs
+ #
+ domain default
+  authorization-scheme tacacs
+  hwtacacs-server tacacs
+ #
+ recording-scheme default
+  recording-mode hwtacacs tacacs
+ #
+ recording-scheme tacacs
+  recording-mode hwtacacs tacacs
+ #
+ cmd recording-scheme tacacs
+#
+ntp-service server disable
+ntp-service ipv6 server disable
+ntp-service source-interface LoopBack7 vpn-instance TAN-MGMT-ACCESS
+ntp-service unicast-server 10.208.210.21  vpn-instance TAN-MGMT-ACCESS  source-interface LoopBack7 preference
+ntp-service unicast-server 10.203.110.61  vpn-instance TAN-MGMT-ACCESS  source-interface LoopBack7
+#
+ipv6 extension-header routing routing-type 0 deny
+ipv6 extension-header routing routing-type 1 deny
+#
+interface Virtual-Template0
+ ppp authentication-mode auto
+#
+interface Ethernet0/0/0
+ speed auto
+ duplex auto
+ shutdown
+#
+interface Global-VE 0
+ ve-group 1 l2-terminate
+#
+interface Global-VE 1
+ ve-group 1 l3-access
+#
+l2tp-group default-lac
+#
+l2tp-group default-lns
+#
+bgp 34984
+ private-4-byte-as enable
+ router-id {{LOOPBACK0_IP_ADDRESS}}
+ graceful-restart
+ peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} as-number 34984
+ peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} connect-interface Loopback0
+ peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} password cipher 2@2!Backb0N3rR
+ peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} as-number 34984
+ peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} connect-interface Loopback0
+ peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} password cipher 2@2!Backb0N3rR
+ group POP-ring internal
+ peer POP-ring connect-interface LoopBack0
+ peer 10.61.0.111 as-number 34984
+ peer 10.61.0.111 connect-interface LoopBack0
+ peer 10.61.0.111 password cipher %^%#Spzc"gMS$<l7`~,g>>r6GG&9Q5yn<NQYGrVqEyL>%^%#
+ peer 10.61.0.112 as-number 34984
+ peer 10.61.0.112 connect-interface LoopBack0
+ peer 10.61.0.112 password cipher %^%#ur~}P:"(5%Z-U0#crmj5Y@(L%:$A@2})4b*$ltl+%^%#
+ #
+ ipv4-family unicast
+  auto-frr
+  ingress-lsp protect-mode bgp-frr
+  reflect change-path-attribute
+  bestroute nexthop-resolved tunnel
+  undo synchronization
+  undo ebgp-interface-sensitive
+  preference 200 200 255
+  import-route direct route-policy connected-into-bgp
+  import-route static route-policy static-into-bgp
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} enable
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} route-policy ibgp-import-from-rr import
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} route-policy ibgp-export-to-rr export
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} next-hop-local
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} advertise-community
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} enable
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} route-policy ibgp-import-from-rr import
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} route-policy ibgp-export-to-rr export
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} next-hop-local
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} advertise-community
+  peer POP-ring enable
+  peer POP-ring advertise-community
+  peer POP-ring reflect-client
+  peer POP-ring next-hop-local
+  peer POP-ring label-route-capability
+  peer 10.61.0.111 enable
+  peer 10.61.0.111 route-policy ibgp-import-from-labeled-rr import
+  peer 10.61.0.111 route-policy ibgp-export-to-labeled-rr export
+  peer 10.61.0.111 next-hop-local
+  peer 10.61.0.111 label-route-capability
+  peer 10.61.0.111 advertise-community
+  peer 10.61.0.111 advertise-ext-community
+  peer 10.61.0.112 enable
+  peer 10.61.0.112 route-policy ibgp-import-from-labeled-rr import
+  peer 10.61.0.112 route-policy ibgp-export-to-labeled-rr export
+  peer 10.61.0.112 next-hop-local
+  peer 10.61.0.112 label-route-capability
+  peer 10.61.0.112 advertise-community
+  peer 10.61.0.112 advertise-ext-community
+ #
+ ipv4-family vpnv4
+  policy vpn-target
+  peer 10.61.0.111 enable
+  peer 10.61.0.111 advertise-community
+  peer 10.61.0.112 enable
+  peer 10.61.0.112 advertise-community
+ #
+ ipv6-family unicast
+  apply-label explicit-null
+  undo synchronization
+  reflect change-path-attribute
+  preference 200 200 255
+  undo ebgp-interface-sensitive
+  import-route direct route-policy ipv6-connected-into-bgp
+  import-route static route-policy ipv6-static-into-bgp
+  auto-frr
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} enable
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} route-policy ipv6-ibgp-import-from-inet-rr import
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} route-policy ipv6-ibgp-export-to-inet-rr export
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} next-hop-local
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} label-route-capability
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} advertise-community
+  peer {{IPV4_UNICAST_RR_01_IP_ADDRESS}} advertise-ext-community
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} enable
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} route-policy ipv6-ibgp-import-from-inet-rr import
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} route-policy ipv6-ibgp-export-to-inet-rr export
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} next-hop-local
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} label-route-capability
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} advertise-community
+  peer {{IPV4_UNICAST_RR_02_IP_ADDRESS}} advertise-ext-community
+ #
+ ipv6-family vpnv6
+  policy vpn-target
+  peer 10.61.0.111 enable
+  peer 10.61.0.111 advertise-community
+  peer 10.61.0.112 enable
+  peer 10.61.0.112 advertise-community
+ #
+ ipv4-family vpn-instance TAN-MGMT-ACCESS
+  preference 200 200 255
+  import-route direct
+ #
+ ipv4-family vpn-instance fullmesh-monitoring
+  preference 200 200 255
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance wifi_ap
+  import-route direct
+ #
+ipv4-family vpn-instance LTE-S1-ACCESS
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance LTE-MGMT-ACCESS
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance LTE-SYNC-ACCESS
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance LTE-X2-{{SEHIR_ADI}}
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance fullmesh-monitoring
+  preference 200 200 255
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance FTTB-GPON-MGMT-ACCESS
+import-route direct
+import-route static
+ #
+ipv4-family vpn-instance KURUMSAL-SW-MGMT-ACCESS
+  import-route direct
+  import-route static
+ #
+ipv4-family vpn-instance solmonitoring
+  import-route direct
+ #
+ipv4-family vpn-instance 2G3G-DATA-ACCESS
+  preference 200 200 255
+  import-route direct
+  import-route static
+#
+interface Eth-Trunk100
+ mtu 9000
+ description {{ETH_TR100_INTERFACE_DESCRIPTION}}
+ set flow-stat interval 30
+ ip address {{ETH_TR100_INTERFACE_UPLINK_IP_ADDRESS}} 255.255.255.254
+ undo shutdown
+ trust upstream solqos
+ pim sm
+ isis enable 1
+ isis authentication-mode md5 cipher %^%#5nRr)O1F@,@A^&4g%L<@R&g5S8GNnRV>EC7K1n&Lp/|.@RAB7!s.=_~iXL*=%^%#
+ isis circuit-level level-2
+ isis circuit-type p2p
+ isis cost 4000
+ isis small-hello
+ isis ldp-sync
+ ip netstream inbound
+ ip netstream sampler fix-packets 5000 inbound
+ ip netstream sampler fix-packets 5000 outbound
+ mode lacp-static
+ mpls
+ mpls mtu 9100
+ mpls te
+ mpls rsvp-te
+ mpls te bandwidth max-reservable-bandwidth {{UPLINK_KAPASITE_DEGERI_KBPS}}
+ mpls te bandwidth bc0 {{UPLINK_KAPASITE_DEGERI_KBPS}}
+ mpls ldp
+ mpls ldp timer igp-sync-delay 180
+ mpls te link administrative group 8
+ port-queue be wfq weight 5 outbound
+ port-queue af1 wfq weight 20 outbound
+ port-queue af2 wfq weight 15 outbound
+ port-queue af3 wfq weight 30 outbound
+ port-queue af4 pq shaping shaping-percentage 15 outbound
+ port-queue ef pq shaping shaping-percentage 15 low-latency outbound
+#
+interface Eth-Trunk101
+ mtu 9000
+ description {{ETH_TR101_INTERFACE_DESCRIPTION}}
+ set flow-stat interval 30
+ ip address {{ETH_TR101_INTERFACE_UPLINK_IP_ADDRESS}} 255.255.255.254
+ trust upstream solqos
+ pim sm
+ isis enable 1
+ isis circuit-type p2p
+ isis circuit-level level-2
+ isis authentication-mode md5 cipher %^%#20vq#h9OH8`v1AOy&2GLG@mr6*46UQ\6;|%E(7W8/Xe+Pptb*X2+Hi1WI:^*%^%#
+ isis cost 1000
+ isis small-hello
+ isis ldp-sync
+ ip netstream inbound
+ ip netstream sampler fix-packets 5000 inbound
+ ip netstream sampler fix-packets 5000 outbound
+ mode lacp-static
+ mpls
+ mpls mtu 9100
+ mpls te
+ mpls te bandwidth max-reservable-bandwidth {{UPLINK_KAPASITE_DEGERI_KBPS}}
+ mpls te bandwidth bc0 {{UPLINK_KAPASITE_DEGERI_KBPS}}
+ mpls rsvp-te
+ mpls ldp
+ mpls ldp timer igp-sync-delay 180
+ port-queue be lpq outbound
+ port-queue af1 wfq weight 20 outbound
+ port-queue af2 wfq weight 15 outbound
+ port-queue af3 wfq weight 30 outbound
+ port-queue af4 pq shaping shaping-percentage 25 outbound
+ port-queue ef pq shaping shaping-percentage 15 low-latency outbound
+#
+bfd 10 bind link-bundle peer-ip {{NPE2_INTERFACE_UPLINK_DESTINATION_IP_ADDRESS}} interface Eth-Trunk100 source-ip {{ETH_TR100_INTERFACE_UPLINK_IP_ADDRESS}}
+ min-tx-interval 50
+ min-rx-interval 50
+ detect-multiplier 3
+ process-pst
+#
+bfd 11 bind link-bundle peer-ip {{UPE1_INTERFACE_UPLINK_DESTINATION_IP_ADDRESS}} interface Eth-Trunk101 source-ip {{ETH_TR101_INTERFACE_UPLINK_IP_ADDRESS}}
+ min-tx-interval 50
+ min-rx-interval 50
+ detect-multiplier 3
+ process-pst
+#
+interface Tunnel100
+ description tunnel-name {{RSVP_TUNNEL_NAME}}
+ set flow-stat interval 10
+ ip address unnumbered interface LoopBack0
+ tunnel-protocol mpls te
+ mpls te igp shortcut isis
+ mpls te igp metric absolute 3999
+ isis enable 1
+ destination {{NPE2_LOOPBACK_IP}}
+ mpls te record-route label
+ mpls te reoptimization frequency 120
+ statistic enable
+ mpls te fast-reroute
+ mpls te signalled tunnel-name {{RSVP_TUNNEL_NAME}}
+ mpls te hop-limit 7
+ mpls te tunnel-id 100
+#
+interface {{UPE_NPE_UPLINK_PHYSICAL_INTERFACE_SLOT_MODUL_PORT}}
+ carrier up-hold-time 50000
+ description {{UPE_NPE_UPLINK_PHYSICAL_INTERFACE_DESCRIPTION}}
+ undo shutdown
+ eth-trunk 100
+ undo dcn
+#
+interface {{UPE_UPE_UPLINK_PHYSICAL_INTERFACE_SLOT_MODUL_PORT}}
+ carrier up-hold-time 50000
+ description {{UPE_UPE_UPLINK_PHYSICAL_INTERFACE_DESCRIPTION}}
+ undo shutdown
+ eth-trunk 101
+ undo dcn
+#
+monitor-group uplink-track
+ monitor enable
+ binding interface Eth-Trunk100 down-weight 10
+ binding interface Eth-Trunk101 down-weight 10
+ trigger-up-delay 30
+#
+igmp
+ssm-mapping 233.26.166.0 255.255.255.0 176.43.0.179
+ssm-mapping 233.88.168.0 255.255.255.0 176.43.0.179
+ssm-mapping 233.26.166.0 255.255.255.0 176.43.0.182
+ssm-mapping 233.88.168.0 255.255.255.0 176.43.0.182
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.6.4
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.6.4
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.6.7
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.6.7
+ssm-mapping 233.21.46.0 255.255.255.240 176.235.15.4
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.12.68
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.12.69
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.12.70
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.12.71
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.12.68
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.12.69
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.12.70
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.12.71
+ssm-mapping 233.21.46.0 255.255.255.240 176.235.15.132
+ssm-mapping 233.21.46.16 255.255.255.240 176.235.15.212
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.6.5
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.6.5
+ssm-mapping 233.26.166.0 255.255.255.0 176.235.6.6
+ssm-mapping 233.88.168.0 255.255.255.0 176.235.6.6
+#
+dhcp enable
+#
+snmp-agent
+snmp-agent packet max-size 1400
+snmp-agent acl 2021
+snmp-agent mib-view included iso-view iso
+snmp-agent mib-view excluded iso-view hwQoS
+snmp-agent community read cipher bil678&%tel mib-view iso-view acl 2021
+snmp-agent sys-info location {{POP_NAME}}
+snmp-agent sys-info version all
+snmp-agent group v3 snmp-read privacy read-view include-all write-view exclude-all notify-view include-all
+snmp-agent group v3 snmp-write privacy read-view include-all write-view include-all notify-view include-all
+snmp-agent group v3 UPEgroup privacy read-view iso-view write-view iso-view notify-view iso-view
+snmp-agent usm-user v3 UPEv3user
+snmp-agent usm-user v3 UPEv3user group UPEgroup
+snmp-agent usm-user v3 UPEv3user authentication-mode md5 cipher %^%#GmZ[9OW@1"jRj8THnV[BhMrJ@:82R-u2g@-4i<SA%^%#
+snmp-agent usm-user v3 UPEv3user privacy-mode des56 cipher %^%#9WLLS3>7tCYl`v2(l1w0ELi'JVM.r,7Pj^F`_khL%^%#
+snmp-agent usm-user v3 UPEv3user acl 2021
+snmp-agent target-host trap address udp-domain 10.222.232.178 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.222.232.179 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.222.232.169 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.222.232.180 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.222.232.181 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.220.52.50 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.220.52.51 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.220.52.41 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.220.52.52 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent target-host trap address udp-domain 10.220.52.53 vpn-instance TAN-MGMT-ACCESS params securityname UPEv3user v3 privacy ext-vb private-netmanager
+snmp-agent trap source LoopBack7
+snmp-agent protocol source-interface LoopBack7
+snmp-agent protocol vpn-instance TAN-MGMT-ACCESS
+#
+snmp-agent mib-view included iso-view iso
+snmp-agent mib-view excluded exclude-all iso
+snmp-agent mib-view included include-all iso
+snmp-agent usm-user v3 snmp-user-read
+snmp-agent usm-user v3 snmp-user-read group snmp-read
+snmp-agent usm-user v3 snmp-user-read authentication-mode md5 cipher %^%#01,9:za;i'%K4\4KIL7V0;q]K:,}iIl(<K(FdZ:S%^%#
+snmp-agent usm-user v3 snmp-user-read privacy-mode des56 cipher %^%#@H1o"+_e;9&fCt<BsIhNe%nd4nk!"1u=(A06st!I%^%#
+snmp-agent usm-user v3 snmp-user-read acl 2021
+snmp-agent usm-user v3 snmp-user-write
+snmp-agent usm-user v3 snmp-user-write group snmp-write
+snmp-agent usm-user v3 snmp-user-write authentication-mode md5 cipher %^%#Sr5JEBkeGJlg5`%8O3I1)cp,L[NTw$|l[[,WoxSA%^%#
+snmp-agent usm-user v3 snmp-user-write privacy-mode des56 cipher %^%#}W(KP/{:78n(*C;GuY_/}6>W=I*NPY'9OJGq!*-H%^%#
+snmp-agent usm-user v3 snmp-user-write acl 2011
+snmp-agent trap enable
+#
+stelnet server enable
+ssh authentication-type default aaa
+ssh client first-time enable
+snetconf server enable
+ssh server acl 3001
+ssh server cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+ssh server hmac sha2_512 sha2_256
+ssh server key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 dh_group1_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521 sm2_kep dh_group16_sha512
+ssh server publickey dsa ecc rsa rsa_sha2_256 rsa_sha2_512
+ssh server dh-exchange min-len 1024
+undo ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server-source -i LoopBack7
+#
+header login file cfcard:/loginbanner.txt
+header shell file cfcard:/execbanner.txt
+#
+telnet client-source -i LoopBack 0
+#
+lldp enable
+#
+lldp management-address {{LOOPBACK0_IP_ADDRESS}}
+#
+slot 15
+ load-balance hash-fields mpls payload-header
+ ip netstream sampler to slot self
+ set access-ve-mac 0218-1994-0001
+#
+slot 16
+ load-balance hash-fields mpls payload-header
+ ip netstream sampler to slot self
+ set access-ve-mac 0218-1994-0001
+#
+user-interface maximum-vty 21
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password tellcom123
+ history-command max-size 256
+ idle-timeout 5 0
+#
+user-interface vty 0 14
+ authentication-mode password
+ user privilege level 15
+ set authentication password cipher tellcom123
+ history-command max-size 256
+ idle-timeout 5 0
+ protocol inbound all
+#
+user-interface vty 16 20
+ authentication-mode password
+ user privilege level 15
+ set authentication password cipher tellcom123
+ history-command max-size 256
+ idle-timeout 5 0
+ protocol inbound all
+#
+local-aaa-server
+#
+memory-usage reliability notice-threshold 85 overload-threshold 95 slot 15
+memory-usage reliability notice-threshold 85 overload-threshold 95 slot 16
+memory-usage reliability switch on
+license
+#
+ftp acl 3001
+#
+license
+active port-core-aggregation slot 15 card 1 port 0-9
+active port-core-aggregation slot 15 card 2 port 0-9
+active port-core-aggregation slot 15 card 3 port 0-9
+active port-core-aggregation slot 15 card 4 port 0-9
+active port-core-aggregation slot 15 card 5 port 0-9
+active port-core-aggregation slot 15 card 6 port 0-9
+active port-core-aggregation slot 15 card 7 port 0-1
+active port-core-aggregation slot 15 card 8 port 0-1
+active port-core-aggregation slot 15 card 9 port 0-1
+active port-core-aggregation slot 15 card 10 port 0-1
+active port-l3vpn slot 15 card 1 port 0-9
+active port-l3vpn slot 15 card 2 port 0-9
+active port-l3vpn slot 15 card 3 port 0-9
+active port-l3vpn slot 15 card 4 port 0-9
+active port-l3vpn slot 15 card 5 port 0-9
+active port-l3vpn slot 15 card 6 port 0-9
+active port-l3vpn slot 15 card 7 port 0-1
+active port-l3vpn slot 15 card 8 port 0-1
+active port-l3vpn slot 15 card 9 port 0-1
+active port-l3vpn slot 15 card 10 port 0-1
+active port-evpn slot 15 card 1 port 0-9
+active port-evpn slot 15 card 2 port 0-9
+active port-evpn slot 15 card 3 port 0-9
+active port-evpn slot 15 card 4 port 0-9
+active port-evpn slot 15 card 5 port 0-9
+active port-evpn slot 15 card 6 port 0-9
+active port-evpn slot 15 card 7 port 0-1
+active port-evpn slot 15 card 8 port 0-1
+active port-evpn slot 15 card 9 port 0-1
+active port-evpn slot 15 card 10 port 0-1
+active port-srv6 slot 15 card 1 port 0-9
+active port-srv6 slot 15 card 2 port 0-9
+active port-srv6 slot 15 card 3 port 0-9
+active port-srv6 slot 15 card 4 port 0-9
+active port-srv6 slot 15 card 5 port 0-9
+active port-srv6 slot 15 card 6 port 0-9
+active port-srv6 slot 15 card 7 port 0-1
+active port-srv6 slot 15 card 8 port 0-1
+active port-srv6 slot 15 card 9 port 0-1
+active port-srv6 slot 15 card 10 port 0-1
+commit

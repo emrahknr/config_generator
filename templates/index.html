@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NE80 Template Generator</title>
+</head>
+<body>
+<h1 align="center" style="color:white; background-color:grey; font-weight:bold; font-size:50px">NE80 Configuration Generator</h1>
+
+<form method=post enctype=multipart/form-data>
+    <fieldset style="background: #f6f8ff; border: 2px solid #4238ca; font-size:20px">
+        <legend style="background-color:white; border:2px solid #4238ca"> ".csv" Uzantili Template Dosyasini Yukle</legend>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </fieldset>
+    <p style="color:green; font-size:20px" >{{dosya}}</p><p style="color:red;font-size:20px" >{{hata}}</p>
+
+</form>
+
+<style>
+  .bg-teal { background: grey; color:white; }
+  .bg-rose { background-color: blue; }
+</style>
+
+<p align="center"><a href=upe1 ><button class="bg-teal" style="height:50px;width:70px"onmouseenter="enter(this);" onmouseleave="leave(this);">UPE-1</button></a></p>
+<p align="center"><a href=upe2 ><button class="bg-teal" style="height:50px;width:70px"onmouseenter="enter(this);" onmouseleave="leave(this);">UPE-2</button></a></p>
+<p align="center"><a href=send_mail ><button class="bg-teal" style="height:50px;width:100px"onmouseenter="enter(this);" onmouseleave="leave(this);">Send Mail</button></a></p>
+
+<script>
+  let enter = button => button.classList.toggle("bg-rose");
+  let leave = button => button.classList.toggle("bg-rose");
+</script>
+
+</body>
+</html>
